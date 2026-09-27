@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Larry — today</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#D9D9D9;--panel:#0A0A0A;--ink:#FFFFFF;--ink2:#A3A3A3;--line:#333333;--pageink:#000000;
+  --flag:#FF3B00;--sea:#FFFFFF;--ok:#00B85C;--warn:#FFB800;--bad:#FF3B00;
+  --num:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --txt:"Barlow","Helvetica Neue",Arial,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1C1C1C;--panel:#000000;--ink:#FFFFFF;--ink2:#A3A3A3;--line:#333333;--pageink:#FFFFFF;--sea:#FFFFFF}}
+:root[data-theme="dark"]{--bg:#1C1C1C;--panel:#000000;--ink:#FFFFFF;--ink2:#A3A3A3;--line:#333333;--pageink:#FFFFFF;--sea:#FFFFFF}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--pageink);font:16px/1.45 var(--txt)}
+main{max-width:720px;margin:0 auto;padding:20px 16px 48px}
+h1{font:600 34px/1 var(--num);margin:0;letter-spacing:.01em}
+.sub{color:#555;margin:6px 0 22px}
+section{background:var(--panel);color:var(--ink);border-radius:10px;padding:14px 16px 16px;margin-bottom:14px}
+section h2{position:relative}
+section h2::after{content:"";display:block;height:2px;background:var(--flag);margin-top:6px}
+section h2{font:600 17px var(--num);color:var(--ink);margin:0 0 12px;letter-spacing:.02em}
+.big{font:600 40px/1 var(--num)}
+.unit{font:500 14px var(--txt);color:var(--ink2);margin-left:4px}
+/* fuel bar — the one loud element */
+.fuel{position:relative;height:34px;border:2px solid var(--ink);border-radius:4px;overflow:hidden;background:#222}
+.fuel .fill{position:absolute;inset:0;width:0;background:var(--flag);transition:width .8s ease-out}
+.fuel .tick{position:absolute;top:0;bottom:0;width:2px;background:var(--ink);left:100%}
+.fuelrow{display:flex;justify-content:space-between;align-items:baseline;margin-top:8px;font-size:15px}
+.fuelrow b{font:600 22px var(--num)}
+.macros{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.macro{border-top:3px solid var(--ink);padding-top:6px}
+.macro span{display:block;color:var(--ink2);font-size:13px}
+.macro b{font:600 22px var(--num)}
+.macro small{color:var(--ink2)}
+/* timing strip */
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.cell{padding:10px 8px 8px 0;border-bottom:1px solid var(--line)}
+.cell:nth-child(3n){padding-right:0}
+.cell span{display:block;color:var(--ink2);font-size:13px}
+.cell b{font:600 26px/1.1 var(--num)}
+.cell i{font-style:normal;font-size:13px;margin-left:5px}
+.up{color:var(--ok)}.dn{color:var(--bad)}.fl{color:var(--ink2)}
+/* sleep bar */
+.sleep{display:flex;height:22px;border-radius:3px;overflow:hidden;margin:6px 0 8px}
+.sleep div{height:100%}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--ink2)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+/* history */
+.hist{width:100%;border-collapse:collapse;font-size:14px}
+.hist th{font-weight:500;color:var(--ink2);text-align:right;padding:6px 4px;border-bottom:1px solid var(--line)}
+.hist th:first-child,.hist td:first-child{text-align:left;padding-left:0}
+.hist td{text-align:right;padding:6px 4px;border-bottom:1px solid var(--line);font-family:var(--num);font-size:17px}
+.hist tr.today td{color:var(--flag)}
+.wrap{overflow-x:auto}
+svg{display:block;width:100%;height:auto}
+.foot{color:#555;font-size:13px;margin-top:20px}
+@media (max-width:420px){.strip{grid-template-columns:repeat(2,1fr)} .cell:nth-child(2n){padding-right:0}}
+@media (prefers-reduced-motion:reduce){.fuel .fill{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <h1 id="title">Today</h1>
+  <p class="sub" id="sub"></p>
+
+  <section>
+    <h2>Fuel so far</h2>
+    <div class="fuel"><div class="fill" id="fill"></div><div class="tick"></div></div>
+    <div class="fuelrow"><span><b id="eaten">—</b><span class="unit">kcal eaten</span></span><span><b id="target">—</b><span class="unit">target</span></span></div>
+    <div class="fuelrow" style="margin-top:2px"><span id="balance"></span><span id="ea"></span></div>
+    <div class="macros" id="macros"></div>
+  </section>
+
+  <section>
+    <h2>Overnight, against your 7-day average</h2>
+    <div class="strip" id="strip"></div>
+  </section>
+
+  <section>
+    <h2>Sleep</h2>
+    <div class="big"><span id="sleeph"></span><span class="unit">h</span></div>
+    <div class="sleep" id="sleepbar"></div>
+    <div class="legend"><span><i style="background:var(--ink)"></i>Deep</span><span><i style="background:#8A8A8A"></i>REM</span><span><i style="background:#5A5A5A"></i>Light</span><span><i style="background:var(--flag)"></i>Awake</span></div>
+  </section>
+
+  <section>
+    <h2>Workouts today</h2>
+    <div class="today" id="todaybox"></div>
+  </section>
+
+  <section>
+    <h2>Last 14 days</h2>
+    <div class="wrap"><table class="hist" id="hist"></table></div>
+  </section>
+
+  <p class="foot" id="foot"></p>
+</main>
+
+<script>
+// Loads data.json written hourly by the GitHub Action (scripts/build_data.py).
+fetch("data.json?t="+Date.now()).then(r=>r.json()).then(render).catch(e=>{document.getElementById("sub").textContent="data.json not found — the Action has not run yet.";});
+function render(DATA){
+const $=id=>document.getElementById(id);
+const days=DATA.days, today=days[days.length-1], prev7=days.slice(-8,-1);
+const avg=(k)=>{const v=prev7.map(x=>x[k]).filter(x=>x!=null);return v.reduce((a,b)=>a+b,0)/v.length};
+const ffm=(()=>{const v=days.map(x=>x.lm).filter(x=>x!=null);return v[v.length-1]})();
+const R=DATA.rules;
+
+// header
+const dt=new Date("2026-"+today.d+"T12:00:00");
+$("title").textContent=dt.toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"});
+$("sub").textContent=today.open?"Day open. Intake fills in as you log.":"Day closed.";
+
+// fuel
+const it=DATA.intake||{}; const target=R.baseline+today.act, eaten=it.kcal??0;
+$("fill").style.width=Math.min(100,eaten/target*100)+"%";
+$("eaten").textContent=eaten.toLocaleString();
+$("target").textContent=target.toLocaleString();
+$("balance").textContent=`Balance ${(eaten-target>=0?"+":"")+(eaten-target)}${it.updated?" · logged "+it.updated:""}`;
+// rolling EA over the last 7 closed days
+const closed=days.filter(x=>x.in!=null).slice(-7);
+const ea=closed.reduce((a,x)=>a+(x.in-x.act),0)/closed.length/ffm;
+$("ea").innerHTML=`7-day EA <b style="font:600 20px var(--num);color:${ea>=R.eaTarget?"var(--ok)":"var(--bad)"}">${ea.toFixed(1)}</b> <span class="unit">target ≥ ${R.eaTarget}</span>`;
+// macro targets from the rules; logged values come from the nutrition CSV feed
+const prot=today.act>0?R.proteinTrain:R.proteinRest, fat=Math.round(target*R.fatPct/9), carbs=Math.round((target-prot*4-fat*9)/4);
+$("macros").innerHTML=[["Carbs",it.carbs,carbs],["Protein",it.protein,prot],["Fat",it.fat,fat]].map(([n,l,v])=>`<div class="macro"><span>${n}</span><b>${l==null?"—":Math.round(l)}</b><small> / ${v} g</small></div>`).join("");
+
+// today
+$("todaybox").innerHTML=`<div class="fuelrow" style="margin:0 0 6px"><span><b>${today.tss}</b><span class="unit">TSS</span></span><span><b>${today.act.toLocaleString()}</b><span class="unit">kcal burned</span></span><span><b>${today.tsb>0?"+":""}${today.tsb}</b><span class="unit">form</span></span></div>`+
+ ((today.wk&&today.wk.length)?today.wk.map(w=>`<div style="padding:8px 0;border-top:1px solid var(--line)"><b style="font:600 18px var(--num)">${w.n}</b><div style="color:var(--ink2);font-size:14px">${w.t}</div></div>`).join(""):`<div style="color:var(--ink2)">Nothing logged yet.</div>`);
+
+// overnight strip
+const cmp=(v,a,goodUp,dec=0)=>{const d=v-a;const cls=Math.abs(d)<0.05?"fl":(d>0)===goodUp?"up":"dn";return `<i class="${cls}">${d>=0?"+":""}${d.toFixed(dec)}</i>`};
+$("strip").innerHTML=[
+ ["HRV",today.hrv,avg("hrv"),true,0],
+ ["Sleeping HR",today.shr,avg("shr"),false,1],
+ ["Resting HR",today.rhr,avg("rhr"),false,0]
+].map(([n,v,a,g,dec])=>`<div class="cell"><span>${n}</span><b>${dec?v.toFixed(1):v}</b>${cmp(v,a,g,dec)}<span>7-day ${dec?a.toFixed(1):Math.round(a)}</span></div>`).join("");
+
+// sleep
+$("sleeph").textContent=today.sl.toFixed(1);
+const light=Math.max(0,today.sl-today.dp-today.rem), tot=today.sl+today.aw;
+$("sleepbar").innerHTML=[[today.dp,"var(--ink)"],[today.rem,"#8A8A8A"],[light,"#5A5A5A"],[today.aw,"var(--flag)"]].map(([v,c])=>`<div style="width:${v/tot*100}%;background:${c}" title="${v.toFixed(1)} h"></div>`).join("");
+$("sleepbar").insertAdjacentHTML("afterend",`<div class="legend" style="margin-top:6px">Deep ${today.dp.toFixed(1)} h (7-day ${avg("dp").toFixed(1)}) · REM ${today.rem.toFixed(1)} · Awake ${today.aw.toFixed(1)}</div>`);
+
+// history table
+const cols=[["Day",d=>d.d.replace("09-","")],["HRV",d=>d.hrv],["Slp HR",d=>d.shr.toFixed(1)],["Sleep",d=>d.sl.toFixed(1)],["Deep",d=>d.dp.toFixed(1)],["TSS",d=>d.tss],["In",d=>d.in??"—"],["Bal",d=>d.bal==null?"—":(d.bal>0?"+":"")+d.bal],["Wt",d=>d.w??"—"]];
+$("hist").innerHTML=`<tr>${cols.map(c=>`<th>${c[0]}</th>`).join("")}</tr>`+days.slice().reverse().map(d=>`<tr${d.open?' class="today"':""}>${cols.map(c=>`<td>${c[1](d)}</td>`).join("")}</tr>`).join("");
+
+$("foot").textContent=`Athlete Log + Daily intake, updated ${DATA.generated}.`;
+}
+</script>
+</body>
+</html>
