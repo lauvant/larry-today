@@ -54,22 +54,19 @@ days = []
 for r in reversed(rows):
     p = props(r)
     days.append({
-        "d": p["date"][5:10], "hrv": p.get("hrv"), "rhr": p.get("resting_hr"), "shr": p.get("avg_sleep_hr"),
+        "date": p["date"], "d": p["date"][5:10], "hrv": p.get("hrv"), "rhr": p.get("resting_hr"), "shr": p.get("avg_sleep_hr"),
         "sl": p.get("sleep_h"), "dp": p.get("deep_h"), "rem": p.get("rem_h"), "aw": p.get("awake_h"),
         "ctl": p.get("ctl"), "atl": p.get("atl"), "tsb": p.get("tsb"), "tss": p.get("tss") or 0,
         "act": p.get("active_kcal") or 0, "in": p.get("kcal_intake"), "bal": p.get("balance_kcal"),
         "w": p.get("weight_kg"), "lm": p.get("lean_mass_kg"), "rr": p.get("resp_rate"), "wk": parse_workouts(p.get("workouts")),
         "open": p["date"] == today.isoformat(),
     })
-if days and days[-1]["open"]:
-    days[-1]["in"] = None; days[-1]["bal"] = None   # open day carries yesterday's values until day close
 
 intake = {}
-ir = query(INTAKE_DS, {"filter": {"property": "Day", "title": {"equals": today.isoformat()}}, "page_size": 1})
-if ir:
-    p = props(ir[0])
-    intake = {"kcal": p.get("kcal"), "carbs": p.get("carbs_g"), "protein": p.get("protein_g"), "fat": p.get("fat_g"),
-              "updated": (p.get("last_updated") or "")[11:16]}
+for r in query(INTAKE_DS, {"sorts": [{"property": "Day", "direction": "descending"}], "page_size": 3}):
+    p = props(r)
+    intake[p["Day"]] = {"kcal": p.get("kcal"), "carbs": p.get("carbs_g"), "protein": p.get("protein_g"), "fat": p.get("fat_g"),
+                        "updated": (p.get("last_updated") or "")[11:16]}
 
 json.dump({"generated": dt.datetime.now().strftime("%d %b %H:%M"), "rules": RULES, "days": days, "intake": intake},
           open("data.json", "w"), indent=0)
