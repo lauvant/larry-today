@@ -47,10 +47,10 @@ def parse_workouts(txt):
     return out
 
 today = dt.date.today()
-since = (today - dt.timedelta(days=13)).isoformat()
-rows = query(LOG_DS, {"filter": {"property": "date", "date": {"on_or_after": since}}, "sorts": [{"property": "date", "direction": "ascending"}], "page_size": 20})
+# 'date' is the title column (ISO text), so sort by it descending and take the last 14 rows
+rows = query(LOG_DS, {"sorts": [{"property": "date", "direction": "descending"}], "page_size": 14})
 days = []
-for r in rows:
+for r in reversed(rows):
     p = props(r)
     days.append({
         "d": p["date"][5:10], "hrv": p.get("hrv"), "rhr": p.get("resting_hr"), "shr": p.get("avg_sleep_hr"),
