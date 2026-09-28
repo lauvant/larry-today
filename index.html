@@ -124,6 +124,7 @@ const R=DATA.rules;
 const dt=new Date("2026-"+today.d+"T12:00:00");
 $("title").textContent=dt.toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"});
 $("sub").textContent=today.open?"Day open. Intake fills in as you log.":"Day closed.";
+const has=v=>v!=null;
 
 // fuel
 const it=DATA.intake||{}; const target=R.baseline+today.act, eaten=it.kcal??0;
@@ -141,12 +142,12 @@ const prot=today.act>0?R.proteinTrain:R.proteinRest, fat=Math.round(target*R.fat
 $("macros").innerHTML=[["Carbs",it.carbs,carbs],["Protein",it.protein,prot],["Fat",it.fat,fat]].map(([n,l,v])=>`<div class="macro"><span>${n}</span><b>${l==null?"—":Math.round(l)}</b><small> / ${v} g</small></div>`).join("");
 
 // today
-$("todaybox").innerHTML=`<div class="fuelrow" style="margin:0 0 6px"><span><b>${today.tss}</b><span class="unit">TSS</span></span><span><b>${today.act.toLocaleString()}</b><span class="unit">kcal burned</span></span><span><b>${today.tsb>0?"+":""}${today.tsb}</b><span class="unit">form</span></span></div>`+
+$("todaybox").innerHTML=`<div class="fuelrow" style="margin:0 0 6px"><span><b>${today.tss}</b><span class="unit">TSS</span></span><span><b>${today.act.toLocaleString()}</b><span class="unit">kcal burned</span></span><span><b>${has(today.tsb)?(today.tsb>0?"+":"")+today.tsb:"—"}</b><span class="unit">form</span></span></div>`+
  ((today.wk&&today.wk.length)?today.wk.map(w=>`<div style="padding:8px 0;border-top:1px solid var(--line)"><b style="font:600 18px var(--num)">${w.n}</b><div style="color:var(--ink2);font-size:14px">${w.t}</div></div>`).join(""):`<div style="color:var(--ink2)">Nothing logged yet.</div>`);
 
 // overnight strip
 const cmp=(v,a,goodUp,dec=0)=>{const d=v-a;const cls=Math.abs(d)<0.05?"fl":(d>0)===goodUp?"up":"dn";return `<i class="${cls}">${d>=0?"+":""}${d.toFixed(dec)}</i>`};
-$("strip").innerHTML=[
+$("strip").innerHTML=!has(today.hrv)?`<div class="cell" style="grid-column:1/-1"><span>Overnight data not in yet.</span></div>`:[
  ["HRV",today.hrv,avg("hrv"),true,0],
  ["Sleeping HR",today.shr,avg("shr"),false,1],
  ["Resting HR",today.rhr,avg("rhr"),false,0],
@@ -154,19 +155,21 @@ $("strip").innerHTML=[
 ].map(([n,v,a,g,dec])=>`<div class="cell"><span>${n}</span><b>${dec?v.toFixed(1):v}</b>${cmp(v,a,g,dec)}<span>7-day ${dec?a.toFixed(1):Math.round(a)}</span></div>`).join("");
 
 // sleep
+if(!has(today.sl)){$("sleeph").textContent="—";$("sleepbar").style.display="none";}else{
 $("sleeph").textContent=today.sl.toFixed(1);
 const light=Math.max(0,today.sl-today.dp-today.rem), tot=today.sl+today.aw;
 $("sleepbar").innerHTML=[[today.dp,"var(--ink)"],[today.rem,"#8A8A8A"],[light,"#5A5A5A"],[today.aw,"var(--flag)"]].map(([v,c])=>`<div style="width:${v/tot*100}%;background:${c}" title="${v.toFixed(1)} h"></div>`).join("");
 const pc=v=>Math.round(v/tot*100);
-const debt=prev7.concat([today]).reduce((a,x)=>a+Math.max(0,R.sleepNeed-x.sl),0);
+const debt=prev7.concat([today]).filter(x=>has(x.sl)).reduce((a,x)=>a+Math.max(0,R.sleepNeed-x.sl),0);
 $("sleepbar").insertAdjacentHTML("afterend",`<div class="legend" style="margin-top:6px">Deep ${today.dp.toFixed(1)} h · ${pc(today.dp)}% &nbsp; REM ${today.rem.toFixed(1)} h · ${pc(today.rem)}% &nbsp; Light ${light.toFixed(1)} h · ${pc(light)}% &nbsp; Awake ${today.aw.toFixed(1)} h · ${pc(today.aw)}%</div><div class="fuelrow" style="margin-top:10px"><span><b>${debt.toFixed(1)}</b><span class="unit">h sleep debt, 7 days (need ${R.sleepNeed} h)</span></span></div>`);
+}
 
 // last 7 days
 (()=>{const wk=days.slice(-7);const mins=wk.reduce((a,d)=>a+(d.wk||[]).reduce((b,w)=>b+(w.min||0),0),0);const n=wk.reduce((a,d)=>a+(d.wk||[]).length,0);const tss=wk.reduce((a,d)=>a+(d.tss||0),0);const kcal=wk.reduce((a,d)=>a+(d.act||0),0);
  $("week").innerHTML=[["Sessions",n],["Hours",(mins/60).toFixed(1)],["TSS",tss],["kcal burned",kcal.toLocaleString()]].map(([k,v])=>`<div class="cell"><span>${k}</span><b>${v}</b></div>`).join("");})();
 
 // history table
-const cols=[["Day",d=>d.d.replace("09-","")],["HRV",d=>d.hrv],["Slp HR",d=>d.shr.toFixed(1)],["Sleep",d=>d.sl.toFixed(1)],["Deep",d=>d.dp.toFixed(1)],["TSS",d=>d.tss],["In",d=>d.in??"—"],["Bal",d=>d.bal==null?"—":(d.bal>0?"+":"")+d.bal],["Wt",d=>d.w??"—"]];
+const cols=[["Day",d=>d.d.replace("09-","")],["HRV",d=>d.hrv??"—"],["Slp HR",d=>has(d.shr)?d.shr.toFixed(1):"—"],["Sleep",d=>has(d.sl)?d.sl.toFixed(1):"—"],["Deep",d=>has(d.dp)?d.dp.toFixed(1):"—"],["TSS",d=>d.tss],["In",d=>d.in??"—"],["Bal",d=>d.bal==null?"—":(d.bal>0?"+":"")+d.bal],["Wt",d=>d.w??"—"]];
 $("hist").innerHTML=`<tr>${cols.map(c=>`<th>${c[0]}</th>`).join("")}</tr>`+days.slice().reverse().map(d=>`<tr${d.open?' class="today"':""}>${cols.map(c=>`<td>${c[1](d)}</td>`).join("")}</tr>`).join("");
 
 $("foot").textContent=`Athlete Log + Daily intake, updated ${DATA.generated}.`;
