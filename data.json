@@ -1,5 +1,5 @@
 {
-"generated": "28 Sep 15:15",
+"generated": "28 Sep 15:48",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -382,5 +382,11 @@
 "open": true
 }
 ],
-"intake": {}
+"intake": {
+"kcal": 820,
+"carbs": 157.6,
+"protein": 20.4,
+"fat": 16.1,
+"updated": "13:21"
+}
 }
