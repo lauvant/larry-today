@@ -1,7 +1,7 @@
 """Builds data.json for the daily-summary page from two Notion data sources.
 Env: NOTION_TOKEN (integration token; share both databases with the integration).
 """
-import json, os, datetime as dt, urllib.request
+import json, os, datetime as dt, urllib.request, urllib.error
 
 TOKEN = os.environ["NOTION_TOKEN"]
 LOG_DS = "c84963b3-643a-4564-92b8-08f38a5af163"      # Athlete Log (daily)
@@ -9,10 +9,21 @@ INTAKE_DS = "a806b326-5146-40bd-98d1-0ca6bf8159dd"   # Daily intake
 RULES = {"baseline": 1850, "proteinTrain": 120, "proteinRest": 100, "fatPct": 0.20, "eaTarget": 28}
 H = {"Authorization": f"Bearer {TOKEN}", "Notion-Version": "2025-09-03", "Content-Type": "application/json"}
 
+def _post(url, body, version):
+    h = dict(H); h["Notion-Version"] = version
+    req = urllib.request.Request(url, data=json.dumps(body).encode(), headers=h, method="POST")
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.load(r)["results"]
+    except urllib.error.HTTPError as e:
+        print("NOTION", e.code, url, e.read().decode()[:600]); raise
+
 def query(ds, body):
-    req = urllib.request.Request(f"https://api.notion.com/v1/data_sources/{ds}/query", data=json.dumps(body).encode(), headers=H, method="POST")
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.load(r)["results"]
+    """Try the data_sources endpoint (2025-09-03); fall back to databases (2022-06-28)."""
+    try:
+        return _post(f"https://api.notion.com/v1/data_sources/{ds}/query", body, "2025-09-03")
+    except urllib.error.HTTPError:
+        return _post(f"https://api.notion.com/v1/databases/{ds}/query", body, "2022-06-28")
 
 def val(p):
     t = p["type"]
