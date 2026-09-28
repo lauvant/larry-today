@@ -1,5 +1,5 @@
 {
-"generated": "28 Sep 23:49",
+"generated": "29 Sep 00:02",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -383,14 +383,8 @@
 "t": "54m \u00b7 12.3km \u00b7 HR Avg:160 Max:186 \u00b7 N/A Power \u00b7 805kcal \u00b7 77TSS \u00b7 HR Zones: Z1:28m, Z2:2m, Z3:7m, Z4:17m"
 }
 ],
-"open": true
+"open": false
 }
 ],
-"intake": {
-"kcal": 1894,
-"carbs": 288.5,
-"protein": 85.7,
-"fat": 47.4,
-"updated": "20:33"
-}
+"intake": {}
 }
