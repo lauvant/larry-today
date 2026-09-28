@@ -53,6 +53,13 @@ section h2{font:600 17px var(--num);color:var(--ink);margin:0 0 12px;letter-spac
 .sleep div{height:100%}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--ink2)}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.stages{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}
+.stages div{border-top:3px solid var(--line);padding-top:6px}
+.stages i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.stages span{font-size:13px;color:var(--ink2)}
+.stages b{display:block;font:600 22px/1.1 var(--num)}
+.stages b small{font:500 12px var(--txt);color:var(--ink2);margin-left:2px}
+.stages em{font-style:normal;font-size:13px;color:var(--ink2)}
 /* history */
 .hist{width:100%;border-collapse:collapse;font-size:14px}
 .hist th{font-weight:500;color:var(--ink2);text-align:right;padding:6px 4px;border-bottom:1px solid var(--line)}
@@ -88,7 +95,6 @@ svg{display:block;width:100%;height:auto}
     <h2>Sleep</h2>
     <div class="big"><span id="sleeph"></span><span class="unit">h</span></div>
     <div class="sleep" id="sleepbar"></div>
-    <div class="legend"><span><i style="background:var(--ink)"></i>Deep</span><span><i style="background:#8A8A8A"></i>REM</span><span><i style="background:#5A5A5A"></i>Light</span><span><i style="background:var(--flag)"></i>Awake</span></div>
   </section>
 
   <section>
@@ -141,7 +147,7 @@ $("balance").textContent=`Balance ${(eaten-target>=0?"+":"")+(eaten-target)}${it
 const closed=days.filter(x=>x.in!=null).slice(-7);
 const ea=closed.reduce((a,x)=>a+(x.in-x.act),0)/closed.length/ffm;
 const eaToday=(eaten-today.act)/ffm;
-$("ea").innerHTML=`<div style="text-align:right">EA today <b style="font:600 20px var(--num);color:${eaToday>=R.eaTarget?"var(--ok)":"var(--bad)"}">${eaToday.toFixed(1)}</b><br><span class="unit">7-day ${ea.toFixed(1)} · target ≥ ${R.eaTarget}</span></div>`;
+$("ea").innerHTML=`<div style="text-align:right">EA today <b style="font:600 20px var(--num);color:${eaToday>=R.eaTarget?"var(--ok)":"var(--bad)"}">${eaToday.toFixed(1)}</b><br><span class="unit">7-day ${ea.toFixed(1)}</span></div>`;
 // macro targets from the rules; logged values come from the nutrition CSV feed
 const prot=today.act>0?R.proteinTrain:R.proteinRest, fat=Math.round(target*R.fatPct/9), carbs=Math.round((target-prot*4-fat*9)/4);
 $("macros").innerHTML=[["Carbs",it.carbs,carbs],["Protein",it.protein,prot],["Fat",it.fat,fat]].map(([n,l,v])=>`<div class="macro"><span>${n}</span><b>${l==null?"—":Math.round(l)}</b><small> / ${v} g</small></div>`).join("");
@@ -165,8 +171,8 @@ $("sleeph").textContent=today.sl.toFixed(1);
 const light=Math.max(0,today.sl-today.dp-today.rem), tot=today.sl+today.aw;
 $("sleepbar").innerHTML=[[today.dp,"var(--ink)"],[today.rem,"#8A8A8A"],[light,"#5A5A5A"],[today.aw,"var(--flag)"]].map(([v,c])=>`<div style="width:${v/tot*100}%;background:${c}" title="${v.toFixed(1)} h"></div>`).join("");
 const pc=v=>Math.round(v/tot*100);
-const debt=prev7.concat([today]).filter(x=>has(x.sl)).reduce((a,x)=>a+Math.max(0,R.sleepNeed-x.sl),0);
-$("sleepbar").insertAdjacentHTML("afterend",`<div class="legend" style="margin-top:6px">Deep ${today.dp.toFixed(1)} h · ${pc(today.dp)}% &nbsp; REM ${today.rem.toFixed(1)} h · ${pc(today.rem)}% &nbsp; Light ${light.toFixed(1)} h · ${pc(light)}% &nbsp; Awake ${today.aw.toFixed(1)} h · ${pc(today.aw)}%</div><div class="fuelrow" style="margin-top:10px"><span><b>${debt.toFixed(1)}</b><span class="unit">h sleep debt, 7 days (need ${R.sleepNeed} h)</span></span></div>`);
+const NEED=7; const debt=days.slice(-7).filter(x=>has(x.sl)).reduce((a,x)=>a+Math.max(0,NEED-x.sl),0);
+$("sleepbar").insertAdjacentHTML("afterend",`<div class="stages">${[["Deep",today.dp,"var(--ink)"],["REM",today.rem,"#8A8A8A"],["Light",light,"#5A5A5A"],["Awake",today.aw,"var(--flag)"]].map(([n,v,c])=>`<div><i style="background:${c}"></i><span>${n}</span><b>${v.toFixed(1)}<small>h</small></b><em>${pc(v)}%</em></div>`).join("")}</div><div class="fuelrow" style="margin-top:10px"><span><b>${debt.toFixed(1)}</b><span class="unit">h sleep debt, 7 days</span></span></div>`);
 }
 
 // last 7 days
