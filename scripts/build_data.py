@@ -1,12 +1,12 @@
 """Builds data.json for the daily-summary page from two Notion data sources.
 Env: NOTION_TOKEN (integration token; share both databases with the integration).
 """
-import json, os, datetime as dt, urllib.request, urllib.error
+import json, os, re, datetime as dt, urllib.request, urllib.error
 
 TOKEN = os.environ["NOTION_TOKEN"]
 LOG_DS = "c84963b3-643a-4564-92b8-08f38a5af163"      # Athlete Log (daily)
 INTAKE_DS = "a806b326-5146-40bd-98d1-0ca6bf8159dd"   # Daily intake
-RULES = {"baseline": 1850, "proteinTrain": 120, "proteinRest": 100, "fatPct": 0.20, "eaTarget": 28}
+RULES = {"baseline": 1850, "proteinTrain": 120, "proteinRest": 100, "fatPct": 0.20, "eaTarget": 28, "sleepNeed": 8.0}
 H = {"Authorization": f"Bearer {TOKEN}", "Notion-Version": "2025-09-03", "Content-Type": "application/json"}
 
 def _post(url, body, version):
@@ -43,7 +43,8 @@ def parse_workouts(txt):
     for chunk in txt.split(" AND "):
         chunk = chunk.strip().strip("[]")
         name, _, rest = chunk.partition(": ")
-        out.append({"n": name.split(" (")[-1].rstrip(")") if " (" in name else name, "t": rest.replace(" | ", " · ")})
+        m = re.match(r"\s*(\d+)m", rest); mins = int(m.group(1)) if m else 0
+        out.append({"n": name.split(" (")[-1].rstrip(")") if " (" in name else name, "t": rest.replace(" | ", " · "), "min": mins})
     return out
 
 today = dt.date.today()
@@ -57,7 +58,7 @@ for r in reversed(rows):
         "sl": p.get("sleep_h"), "dp": p.get("deep_h"), "rem": p.get("rem_h"), "aw": p.get("awake_h"),
         "ctl": p.get("ctl"), "atl": p.get("atl"), "tsb": p.get("tsb"), "tss": p.get("tss") or 0,
         "act": p.get("active_kcal") or 0, "in": p.get("kcal_intake"), "bal": p.get("balance_kcal"),
-        "w": p.get("weight_kg"), "lm": p.get("lean_mass_kg"), "wk": parse_workouts(p.get("workouts")),
+        "w": p.get("weight_kg"), "lm": p.get("lean_mass_kg"), "rr": p.get("resp_rate"), "wk": parse_workouts(p.get("workouts")),
         "open": p["date"] == today.isoformat(),
     })
 if days and days[-1]["open"]:

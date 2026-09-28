@@ -41,9 +41,9 @@ section h2{font:600 17px var(--num);color:var(--ink);margin:0 0 12px;letter-spac
 .macro b{font:600 22px var(--num)}
 .macro small{color:var(--ink2)}
 /* timing strip */
-.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
 .cell{padding:10px 8px 8px 0;border-bottom:1px solid var(--line)}
-.cell:nth-child(3n){padding-right:0}
+.cell:nth-child(4n){padding-right:0}
 .cell span{display:block;color:var(--ink2);font-size:13px}
 .cell b{font:600 26px/1.1 var(--num)}
 .cell i{font-style:normal;font-size:13px;margin-left:5px}
@@ -68,11 +68,11 @@ svg{display:block;width:100%;height:auto}
 </head>
 <body>
 <main>
-  <h1 id="title">Today</h1>
+  <div style="display:flex;justify-content:space-between;align-items:center"><h1 id="title">Today</h1><button id="refresh" style="background:none;border:2px solid #000;border-radius:6px;padding:6px 12px;font:600 15px var(--num);color:#000;cursor:pointer">REFRESH</button></div>
   <p class="sub" id="sub"></p>
 
   <section>
-    <h2>Fuel so far</h2>
+    <h2>FUEL</h2>
     <div class="fuel"><div class="fill" id="fill"></div><div class="tick"></div></div>
     <div class="fuelrow"><span><b id="eaten">—</b><span class="unit">kcal eaten</span></span><span><b id="target">—</b><span class="unit">target</span></span></div>
     <div class="fuelrow" style="margin-top:2px"><span id="balance"></span><span id="ea"></span></div>
@@ -80,7 +80,7 @@ svg{display:block;width:100%;height:auto}
   </section>
 
   <section>
-    <h2>Overnight, against your 7-day average</h2>
+    <h2>METRICS</h2>
     <div class="strip" id="strip"></div>
   </section>
 
@@ -92,12 +92,17 @@ svg{display:block;width:100%;height:auto}
   </section>
 
   <section>
-    <h2>Workouts today</h2>
+    <h2>WORKOUTS</h2>
     <div class="today" id="todaybox"></div>
   </section>
 
   <section>
-    <h2>Last 14 days</h2>
+    <h2>LAST 7 DAYS</h2>
+    <div class="strip" id="week"></div>
+  </section>
+
+  <section>
+    <h2>LAST 14 DAYS</h2>
     <div class="wrap"><table class="hist" id="hist"></table></div>
   </section>
 
@@ -106,7 +111,8 @@ svg{display:block;width:100%;height:auto}
 
 <script>
 // Loads data.json written hourly by the GitHub Action (scripts/build_data.py).
-fetch("data.json?t="+Date.now()).then(r=>r.json()).then(render).catch(e=>{document.getElementById("sub").textContent="data.json not found — the Action has not run yet.";});
+function load(){fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(render).catch(e=>{document.getElementById("sub").textContent="data.json not found — the Action has not run yet.";});}
+load();document.getElementById("refresh").addEventListener("click",load);
 function render(DATA){
 const $=id=>document.getElementById(id);
 const days=DATA.days, today=days[days.length-1], prev7=days.slice(-8,-1);
@@ -128,7 +134,8 @@ $("balance").textContent=`Balance ${(eaten-target>=0?"+":"")+(eaten-target)}${it
 // rolling EA over the last 7 closed days
 const closed=days.filter(x=>x.in!=null).slice(-7);
 const ea=closed.reduce((a,x)=>a+(x.in-x.act),0)/closed.length/ffm;
-$("ea").innerHTML=`7-day EA <b style="font:600 20px var(--num);color:${ea>=R.eaTarget?"var(--ok)":"var(--bad)"}">${ea.toFixed(1)}</b> <span class="unit">target ≥ ${R.eaTarget}</span>`;
+const eaToday=(eaten-today.act)/ffm;
+$("ea").innerHTML=`<div style="text-align:right">EA today <b style="font:600 20px var(--num);color:${eaToday>=R.eaTarget?"var(--ok)":"var(--bad)"}">${eaToday.toFixed(1)}</b><br><span class="unit">7-day ${ea.toFixed(1)} · target ≥ ${R.eaTarget}</span></div>`;
 // macro targets from the rules; logged values come from the nutrition CSV feed
 const prot=today.act>0?R.proteinTrain:R.proteinRest, fat=Math.round(target*R.fatPct/9), carbs=Math.round((target-prot*4-fat*9)/4);
 $("macros").innerHTML=[["Carbs",it.carbs,carbs],["Protein",it.protein,prot],["Fat",it.fat,fat]].map(([n,l,v])=>`<div class="macro"><span>${n}</span><b>${l==null?"—":Math.round(l)}</b><small> / ${v} g</small></div>`).join("");
@@ -142,14 +149,21 @@ const cmp=(v,a,goodUp,dec=0)=>{const d=v-a;const cls=Math.abs(d)<0.05?"fl":(d>0)
 $("strip").innerHTML=[
  ["HRV",today.hrv,avg("hrv"),true,0],
  ["Sleeping HR",today.shr,avg("shr"),false,1],
- ["Resting HR",today.rhr,avg("rhr"),false,0]
+ ["Resting HR",today.rhr,avg("rhr"),false,0],
+ ["Resp rate",today.rr??0,avg("rr")||0,false,1]
 ].map(([n,v,a,g,dec])=>`<div class="cell"><span>${n}</span><b>${dec?v.toFixed(1):v}</b>${cmp(v,a,g,dec)}<span>7-day ${dec?a.toFixed(1):Math.round(a)}</span></div>`).join("");
 
 // sleep
 $("sleeph").textContent=today.sl.toFixed(1);
 const light=Math.max(0,today.sl-today.dp-today.rem), tot=today.sl+today.aw;
 $("sleepbar").innerHTML=[[today.dp,"var(--ink)"],[today.rem,"#8A8A8A"],[light,"#5A5A5A"],[today.aw,"var(--flag)"]].map(([v,c])=>`<div style="width:${v/tot*100}%;background:${c}" title="${v.toFixed(1)} h"></div>`).join("");
-$("sleepbar").insertAdjacentHTML("afterend",`<div class="legend" style="margin-top:6px">Deep ${today.dp.toFixed(1)} h (7-day ${avg("dp").toFixed(1)}) · REM ${today.rem.toFixed(1)} · Awake ${today.aw.toFixed(1)}</div>`);
+const pc=v=>Math.round(v/tot*100);
+const debt=prev7.concat([today]).reduce((a,x)=>a+Math.max(0,R.sleepNeed-x.sl),0);
+$("sleepbar").insertAdjacentHTML("afterend",`<div class="legend" style="margin-top:6px">Deep ${today.dp.toFixed(1)} h · ${pc(today.dp)}% &nbsp; REM ${today.rem.toFixed(1)} h · ${pc(today.rem)}% &nbsp; Light ${light.toFixed(1)} h · ${pc(light)}% &nbsp; Awake ${today.aw.toFixed(1)} h · ${pc(today.aw)}%</div><div class="fuelrow" style="margin-top:10px"><span><b>${debt.toFixed(1)}</b><span class="unit">h sleep debt, 7 days (need ${R.sleepNeed} h)</span></span></div>`);
+
+// last 7 days
+(()=>{const wk=days.slice(-7);const mins=wk.reduce((a,d)=>a+(d.wk||[]).reduce((b,w)=>b+(w.min||0),0),0);const n=wk.reduce((a,d)=>a+(d.wk||[]).length,0);const tss=wk.reduce((a,d)=>a+(d.tss||0),0);const kcal=wk.reduce((a,d)=>a+(d.act||0),0);
+ $("week").innerHTML=[["Sessions",n],["Hours",(mins/60).toFixed(1)],["TSS",tss],["kcal burned",kcal.toLocaleString()]].map(([k,v])=>`<div class="cell"><span>${k}</span><b>${v}</b></div>`).join("");})();
 
 // history table
 const cols=[["Day",d=>d.d.replace("09-","")],["HRV",d=>d.hrv],["Slp HR",d=>d.shr.toFixed(1)],["Sleep",d=>d.sl.toFixed(1)],["Deep",d=>d.dp.toFixed(1)],["TSS",d=>d.tss],["In",d=>d.in??"—"],["Bal",d=>d.bal==null?"—":(d.bal>0?"+":"")+d.bal],["Wt",d=>d.w??"—"]];
