@@ -1,0 +1,386 @@
+{
+"generated": "28 Sep 15:10",
+"rules": {
+"baseline": 1850,
+"proteinTrain": 120,
+"proteinRest": 100,
+"fatPct": 0.2,
+"eaTarget": 28
+},
+"days": [
+{
+"d": "09-15",
+"hrv": 61,
+"rhr": 44,
+"shr": 46.375,
+"sl": 7.4,
+"dp": 1.6,
+"rem": 1.4,
+"aw": 1.6,
+"ctl": 82.4,
+"atl": 79.6,
+"tsb": 2.8,
+"tss": 99,
+"act": 891,
+"in": 2559,
+"bal": -182,
+"w": 68.2,
+"lm": null,
+"wk": [
+{
+"n": "Hardlopen op een loopband",
+"t": "50m \u00b7 11.1km \u00b7 HR Avg:156 Max:183 \u00b7 N/A Power \u00b7 667kcal \u00b7 90TSS \u00b7 HR Zones: Z1:25m, Z2:5m, Z3:12m, Z4:8m"
+},
+{
+"n": "Strength",
+"t": "58m \u00b7 0km \u00b7 HR Avg:86 Max:138 \u00b7 N/A Power \u00b7 224kcal \u00b7 9TSS \u00b7 HR Zones: Z1:58m"
+}
+],
+"open": false
+},
+{
+"d": "09-16",
+"hrv": 47,
+"rhr": 43,
+"shr": 46.5,
+"sl": 7.6,
+"dp": 1.5,
+"rem": 1.3,
+"aw": 1.7,
+"ctl": 81.9,
+"atl": 77.5,
+"tsb": 4.4,
+"tss": 64,
+"act": 808,
+"in": 3126,
+"bal": 468,
+"w": 67.8,
+"lm": null,
+"wk": [
+{
+"n": "Portim\u00e3o Motorsport",
+"t": "114m \u00b7 5.0km \u00b7 HR Avg:115 Max:153 \u00b7 N/A Power \u00b7 808kcal \u00b7 64TSS \u00b7 HR Zones: Z1:98m, Z2:15m, Z3:1m"
+}
+],
+"open": false
+},
+{
+"d": "09-17",
+"hrv": 37,
+"rhr": 49,
+"shr": 51.375,
+"sl": 1.8,
+"dp": 0.6,
+"rem": 0.1,
+"aw": 1.5,
+"ctl": 82.4,
+"atl": 80.9,
+"tsb": 1.5,
+"tss": 103,
+"act": 1396,
+"in": 3117,
+"bal": -129,
+"w": null,
+"lm": null,
+"wk": [
+{
+"n": "Portim\u00e3o Motorsport",
+"t": "132m \u00b7 2.9km \u00b7 HR Avg:117 Max:161 \u00b7 N/A Power \u00b7 860kcal \u00b7 75TSS \u00b7 HR Zones: Z1:111m, Z2:18m, Z3:3m, Z4:1m"
+},
+{
+"n": "Motorsport",
+"t": "56m \u00b7 0km \u00b7 HR Avg:129 Max:155 \u00b7 N/A Power \u00b7 536kcal \u00b7 28TSS \u00b7 HR Zones: Z1:57m"
+}
+],
+"open": false
+},
+{
+"d": "09-18",
+"hrv": 74,
+"rhr": 42,
+"shr": 44.875,
+"sl": 6.5,
+"dp": 1.9,
+"rem": 1.6,
+"aw": 1,
+"ctl": 80.5,
+"atl": 70.1,
+"tsb": 10.4,
+"tss": 0,
+"act": 0,
+"in": 1862,
+"bal": 12,
+"w": null,
+"lm": null,
+"wk": [],
+"open": false
+},
+{
+"d": "09-19",
+"hrv": 61,
+"rhr": 42,
+"shr": 45.75,
+"sl": 7.5,
+"dp": 1.5,
+"rem": 2.2,
+"aw": 1.4,
+"ctl": 80.5,
+"atl": 71.7,
+"tsb": 8.8,
+"tss": 82,
+"act": 995,
+"in": 2545,
+"bal": -300,
+"w": 68.1,
+"lm": 62.4,
+"wk": [
+{
+"n": "J\u00e1vea Hardlopen",
+"t": "60m \u00b7 12.6km \u00b7 HR Avg:149 Max:171 \u00b7 N/A Power \u00b7 814kcal \u00b7 74TSS \u00b7 HR Zones: Z1:57m, Z2:2m, Z3:1m"
+},
+{
+"n": "Strength",
+"t": "41m \u00b7 0km \u00b7 HR Avg:88 Max:145 \u00b7 N/A Power \u00b7 181kcal \u00b7 8TSS \u00b7 HR Zones: Z1:41m"
+}
+],
+"open": false
+},
+{
+"d": "09-20",
+"hrv": 56,
+"rhr": 42,
+"shr": 44.875,
+"sl": 7.4,
+"dp": 1.6,
+"rem": 1.9,
+"aw": 2,
+"ctl": 81.1,
+"atl": 76.3,
+"tsb": 4.8,
+"tss": 106,
+"act": 1885,
+"in": 3571,
+"bal": -164,
+"w": 68.3,
+"lm": 62.4,
+"wk": [
+{
+"n": "Morning Ride",
+"t": "138m \u00b7 71.3km \u00b7 HR Avg:137 Max:164 \u00b7 208W NP \u00b7 1824kcal \u00b7 104TSS \u00b7 HR Zones: Z1:73m, Z2:61m, Z3:5m \u00b7 Power Zones: Z1:14m, Z2:108m, Z3:15m, Z4:1m, Z8:2m"
+},
+{
+"n": "Strength",
+"t": "26m \u00b7 0km \u00b7 HR Avg:71 Max:108 \u00b7 N/A Power \u00b7 61kcal \u00b7 2TSS \u00b7 HR Zones: Z1:26m"
+}
+],
+"open": false
+},
+{
+"d": "09-21",
+"hrv": 74,
+"rhr": 42,
+"shr": 44.75,
+"sl": 6.2,
+"dp": 1.3,
+"rem": 1.4,
+"aw": 1.3,
+"ctl": 82.1,
+"atl": 82.2,
+"tsb": -0.1,
+"tss": 121,
+"act": 1873,
+"in": 3459,
+"bal": -264,
+"w": 68.4,
+"lm": 62.8,
+"wk": [
+{
+"n": "Morning Ride",
+"t": "144m \u00b7 67.2km \u00b7 HR Avg:143 Max:192 \u00b7 220W NP \u00b7 1873kcal \u00b7 121TSS \u00b7 HR Zones: Z1:65m, Z2:52m, Z3:15m, Z4:8m, Z5:4m \u00b7 Power Zones: Z1:27m, Z2:85m, Z3:17m, Z4:11m, Z5:4m, Z8:11m"
+}
+],
+"open": false
+},
+{
+"d": "09-22",
+"hrv": 69,
+"rhr": 44,
+"shr": 47.125,
+"sl": 7.2,
+"dp": 1.4,
+"rem": 2.2,
+"aw": 1.8,
+"ctl": 82.8,
+"atl": 86.5,
+"tsb": -3.7,
+"tss": 114,
+"act": 1960,
+"in": 3484,
+"bal": -326,
+"w": 68.7,
+"lm": 62.3,
+"wk": [
+{
+"n": "Strength",
+"t": "41m \u00b7 0km \u00b7 HR Avg:83 Max:127 \u00b7 N/A Power \u00b7 144kcal \u00b7 6TSS \u00b7 HR Zones: Z1:41m"
+},
+{
+"n": "Morning Ride",
+"t": "128m \u00b7 63.3km \u00b7 HR Avg:146 Max:162 \u00b7 221W NP \u00b7 1816kcal \u00b7 108TSS \u00b7 HR Zones: Z1:27m, Z2:84m, Z3:17m \u00b7 Power Zones: Z1:9m, Z2:73m, Z3:45m, Z8:1m"
+}
+],
+"open": false
+},
+{
+"d": "09-23",
+"hrv": 64,
+"rhr": 45,
+"shr": 47.75,
+"sl": 7.5,
+"dp": 1,
+"rem": 1.6,
+"aw": 1,
+"ctl": 83.6,
+"atl": 90.7,
+"tsb": -7.1,
+"tss": 118,
+"act": 1734,
+"in": 2915,
+"bal": -669,
+"w": 68.5,
+"lm": 62.7,
+"wk": [
+{
+"n": "Morning Ride",
+"t": "120m \u00b7 61.0km \u00b7 HR Avg:149 Max:181 \u00b7 239W NP \u00b7 1734kcal \u00b7 118TSS \u00b7 HR Zones: Z1:29m, Z2:61m, Z3:10m, Z4:20m \u00b7 Power Zones: Z1:15m, Z2:44m, Z3:36m, Z4:24m, Z8:25m"
+}
+],
+"open": false
+},
+{
+"d": "09-24",
+"hrv": 63,
+"rhr": 44,
+"shr": 46.125,
+"sl": 5.4,
+"dp": 1.2,
+"rem": 1,
+"aw": 1,
+"ctl": 81.7,
+"atl": 78.6,
+"tsb": 3.1,
+"tss": 0,
+"act": 0,
+"in": 1925,
+"bal": 75,
+"w": null,
+"lm": null,
+"wk": [],
+"open": false
+},
+{
+"d": "09-25",
+"hrv": 50,
+"rhr": 42,
+"shr": 45.375,
+"sl": 7.7,
+"dp": 1.9,
+"rem": 1.8,
+"aw": 2.1,
+"ctl": 83,
+"atl": 86.5,
+"tsb": -3.5,
+"tss": 138,
+"act": 2368,
+"in": 3624,
+"bal": -594,
+"w": 68.5,
+"lm": 62.3,
+"wk": [
+{
+"n": "Strength",
+"t": "71m \u00b7 0km \u00b7 HR Avg:91 Max:127 \u00b7 N/A Power \u00b7 302kcal \u00b7 14TSS \u00b7 HR Zones: Z1:72m"
+},
+{
+"n": "Morning Ride",
+"t": "148m \u00b7 74.2km \u00b7 HR Avg:148 Max:165 \u00b7 220W NP \u00b7 2066kcal \u00b7 124TSS \u00b7 HR Zones: Z1:26m, Z2:96m, Z3:26m \u00b7 Power Zones: Z1:14m, Z2:79m, Z3:54m, Z4:1m, Z8:2m"
+}
+],
+"open": false
+},
+{
+"d": "09-26",
+"hrv": 76,
+"rhr": 42,
+"shr": 45.75,
+"sl": 4.4,
+"dp": 1,
+"rem": 0.9,
+"aw": 0.6,
+"ctl": 81,
+"atl": 75,
+"tsb": 6,
+"tss": 0,
+"act": 0,
+"in": 1628,
+"bal": -222,
+"w": null,
+"lm": null,
+"wk": [],
+"open": false
+},
+{
+"d": "09-27",
+"hrv": 59,
+"rhr": 44,
+"shr": 47,
+"sl": 7.1,
+"dp": 1.6,
+"rem": 1.5,
+"aw": 0.9,
+"ctl": 80.6,
+"atl": 73.1,
+"tsb": 7.5,
+"tss": 61,
+"act": 663,
+"in": 2589,
+"bal": 76,
+"w": null,
+"lm": null,
+"wk": [
+{
+"n": "Morning Run",
+"t": "50m \u00b7 10.5km \u00b7 HR Avg:145 Max:157 \u00b7 N/A Power \u00b7 663kcal \u00b7 61TSS \u00b7 HR Zones: Z1:50m"
+}
+],
+"open": false
+},
+{
+"d": "09-28",
+"hrv": 49,
+"rhr": 44,
+"shr": 47.75,
+"sl": 7,
+"dp": 1.1,
+"rem": 1.2,
+"aw": 1,
+"ctl": 80.5,
+"atl": 73.6,
+"tsb": 6.9,
+"tss": 77,
+"act": 805,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"wk": [
+{
+"n": "Dorval Hardlopen",
+"t": "54m \u00b7 12.3km \u00b7 HR Avg:160 Max:186 \u00b7 N/A Power \u00b7 805kcal \u00b7 77TSS \u00b7 HR Zones: Z1:28m, Z2:2m, Z3:7m, Z4:17m"
+}
+],
+"open": true
+}
+],
+"intake": {}
+}
