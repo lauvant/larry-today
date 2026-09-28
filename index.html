@@ -95,6 +95,7 @@ svg{display:block;width:100%;height:auto}
     <h2>Sleep</h2>
     <div class="big"><span id="sleeph"></span><span class="unit">h</span></div>
     <div class="sleep" id="sleepbar"></div>
+    <div id="stages"></div>
   </section>
 
   <section>
@@ -117,7 +118,7 @@ svg{display:block;width:100%;height:auto}
 
 <script>
 // Loads data.json written hourly by the GitHub Action (scripts/build_data.py).
-function load(){fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(render).catch(e=>{document.getElementById("sub").textContent="data.json not found — the Action has not run yet.";});}
+function load(){const b=document.getElementById("refresh");b.textContent="…";b.disabled=true;fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(d=>{render(d);b.textContent="UPDATED "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"});setTimeout(()=>{b.textContent="REFRESH";b.disabled=false;},2500);}).catch(e=>{document.getElementById("sub").textContent="data.json not found — the Action has not run yet.";b.textContent="REFRESH";b.disabled=false;});}
 load();document.getElementById("refresh").addEventListener("click",load);
 function render(DATA){
 const $=id=>document.getElementById(id);
@@ -166,13 +167,13 @@ $("strip").innerHTML=!has(today.hrv)?`<div class="cell" style="grid-column:1/-1"
 ].map(([n,v,a,g,dec])=>`<div class="cell"><span>${n}</span><b>${dec?v.toFixed(1):v}</b>${cmp(v,a,g,dec)}<span>7-day ${dec?a.toFixed(1):Math.round(a)}</span></div>`).join("");
 
 // sleep
-if(!has(today.sl)){$("sleeph").textContent="—";$("sleepbar").style.display="none";}else{
+if(!has(today.sl)){$("sleeph").textContent="—";$("sleepbar").style.display="none";$("stages").innerHTML="";}else{$("sleepbar").style.display="";
 $("sleeph").textContent=today.sl.toFixed(1);
 const light=Math.max(0,today.sl-today.dp-today.rem), tot=today.sl+today.aw;
 $("sleepbar").innerHTML=[[today.dp,"var(--ink)"],[today.rem,"#8A8A8A"],[light,"#5A5A5A"],[today.aw,"var(--flag)"]].map(([v,c])=>`<div style="width:${v/tot*100}%;background:${c}" title="${v.toFixed(1)} h"></div>`).join("");
 const pc=v=>Math.round(v/tot*100);
 const NEED=7; const debt=days.slice(-7).filter(x=>has(x.sl)).reduce((a,x)=>a+Math.max(0,NEED-x.sl),0);
-$("sleepbar").insertAdjacentHTML("afterend",`<div class="stages">${[["Deep",today.dp,"var(--ink)"],["REM",today.rem,"#8A8A8A"],["Light",light,"#5A5A5A"],["Awake",today.aw,"var(--flag)"]].map(([n,v,c])=>`<div><i style="background:${c}"></i><span>${n}</span><b>${v.toFixed(1)}<small>h</small></b><em>${pc(v)}%</em></div>`).join("")}</div><div class="fuelrow" style="margin-top:10px"><span><b>${debt.toFixed(1)}</b><span class="unit">h sleep debt, 7 days</span></span></div>`);
+$("stages").innerHTML=`<div class="stages">${[["Deep",today.dp,"var(--ink)"],["REM",today.rem,"#8A8A8A"],["Light",light,"#5A5A5A"],["Awake",today.aw,"var(--flag)"]].map(([n,v,c])=>`<div><i style="background:${c}"></i><span>${n}</span><b>${v.toFixed(1)}<small>h</small></b><em>${pc(v)}%</em></div>`).join("")}</div><div class="fuelrow" style="margin-top:10px"><span><b>${debt.toFixed(1)}</b><span class="unit">h sleep debt, 7 days</span></span></div>`;
 }
 
 // last 7 days
