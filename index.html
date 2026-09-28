@@ -115,19 +115,24 @@ function load(){fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.js
 load();document.getElementById("refresh").addEventListener("click",load);
 function render(DATA){
 const $=id=>document.getElementById(id);
-const days=DATA.days, today=days[days.length-1], prev7=days.slice(-8,-1);
+const localDate=new Date().toLocaleDateString("en-CA");           // YYYY-MM-DD in the device's timezone
+let days=DATA.days.filter(d=>d.date<=localDate);                     // drop rows stamped ahead of local time
+if(!days.length) days=DATA.days.slice(0,1);
+const today=days[days.length-1], prev7=days.slice(-8,-1);
+today.open=(today.date===localDate);
+if(today.open){today.in=null;today.bal=null;}                        // open day carries yesterday's values until day close
 const avg=(k)=>{const v=prev7.map(x=>x[k]).filter(x=>x!=null);return v.reduce((a,b)=>a+b,0)/v.length};
 const ffm=(()=>{const v=days.map(x=>x.lm).filter(x=>x!=null);return v[v.length-1]})();
 const R=DATA.rules;
 
 // header
-const dt=new Date("2026-"+today.d+"T12:00:00");
+const dt=new Date(today.date+"T12:00:00");
 $("title").textContent=dt.toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"});
 $("sub").textContent=today.open?"Day open. Intake fills in as you log.":"Day closed.";
 const has=v=>v!=null;
 
 // fuel
-const it=DATA.intake||{}; const target=R.baseline+today.act, eaten=it.kcal??0;
+const it=(DATA.intake&&DATA.intake[today.date])||{}; const target=R.baseline+today.act, eaten=it.kcal??0;
 $("fill").style.width=Math.min(100,eaten/target*100)+"%";
 $("eaten").textContent=eaten.toLocaleString();
 $("target").textContent=target.toLocaleString();
