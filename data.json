@@ -1,5 +1,5 @@
 {
-"generated": "28 Sep 17:06",
+"generated": "28 Sep 17:27",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -364,16 +364,20 @@
 "dp": 1.1,
 "rem": 1.2,
 "aw": 1,
-"ctl": 80.5,
-"atl": 73.6,
-"tsb": 6.9,
-"tss": 77,
-"act": 805,
+"ctl": 80.7,
+"atl": 75,
+"tsb": 5.7,
+"tss": 87,
+"act": 1033,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "wk": [
+{
+"n": "Strength",
+"t": "57m \u00b7 0km \u00b7 HR Avg:86 Max:158 \u00b7 N/A Power \u00b7 228kcal \u00b7 10TSS \u00b7 HR Zones: Z1:57m"
+},
 {
 "n": "Dorval Hardlopen",
 "t": "54m \u00b7 12.3km \u00b7 HR Avg:160 Max:186 \u00b7 N/A Power \u00b7 805kcal \u00b7 77TSS \u00b7 HR Zones: Z1:28m, Z2:2m, Z3:7m, Z4:17m"
