@@ -1,5 +1,5 @@
 {
-"generated": "29 Sep 00:22",
+"generated": "29 Sep 00:34",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -8,36 +8,6 @@
 "eaTarget": 28
 },
 "days": [
-{
-"d": "09-15",
-"hrv": 61,
-"rhr": 44,
-"shr": 46.375,
-"sl": 7.4,
-"dp": 1.6,
-"rem": 1.4,
-"aw": 1.6,
-"ctl": 82.4,
-"atl": 79.6,
-"tsb": 2.8,
-"tss": 99,
-"act": 891,
-"in": 2559,
-"bal": -182,
-"w": 68.2,
-"lm": null,
-"wk": [
-{
-"n": "Hardlopen op een loopband",
-"t": "50m \u00b7 11.1km \u00b7 HR Avg:156 Max:183 \u00b7 N/A Power \u00b7 667kcal \u00b7 90TSS \u00b7 HR Zones: Z1:25m, Z2:5m, Z3:12m, Z4:8m"
-},
-{
-"n": "Strength",
-"t": "58m \u00b7 0km \u00b7 HR Avg:86 Max:138 \u00b7 N/A Power \u00b7 224kcal \u00b7 9TSS \u00b7 HR Zones: Z1:58m"
-}
-],
-"open": false
-},
 {
 "d": "09-16",
 "hrv": 47,
@@ -384,6 +354,27 @@
 }
 ],
 "open": false
+},
+{
+"d": "09-29",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 78.8,
+"atl": 65,
+"tsb": 13.8,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"wk": [],
+"open": true
 }
 ],
 "intake": {}
