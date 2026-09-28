@@ -1,11 +1,12 @@
 {
-"generated": "29 Sep 01:01",
+"generated": "29 Sep 01:22",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
 "proteinRest": 100,
 "fatPct": 0.2,
-"eaTarget": 28
+"eaTarget": 28,
+"sleepNeed": 8.0
 },
 "days": [
 {
@@ -26,10 +27,12 @@
 "bal": 468,
 "w": 67.8,
 "lm": null,
+"rr": 14.1,
 "wk": [
 {
 "n": "Portim\u00e3o Motorsport",
-"t": "114m \u00b7 5.0km \u00b7 HR Avg:115 Max:153 \u00b7 N/A Power \u00b7 808kcal \u00b7 64TSS \u00b7 HR Zones: Z1:98m, Z2:15m, Z3:1m"
+"t": "114m \u00b7 5.0km \u00b7 HR Avg:115 Max:153 \u00b7 N/A Power \u00b7 808kcal \u00b7 64TSS \u00b7 HR Zones: Z1:98m, Z2:15m, Z3:1m",
+"min": 114
 }
 ],
 "open": false
@@ -52,14 +55,17 @@
 "bal": -129,
 "w": null,
 "lm": null,
+"rr": 14.9,
 "wk": [
 {
 "n": "Portim\u00e3o Motorsport",
-"t": "132m \u00b7 2.9km \u00b7 HR Avg:117 Max:161 \u00b7 N/A Power \u00b7 860kcal \u00b7 75TSS \u00b7 HR Zones: Z1:111m, Z2:18m, Z3:3m, Z4:1m"
+"t": "132m \u00b7 2.9km \u00b7 HR Avg:117 Max:161 \u00b7 N/A Power \u00b7 860kcal \u00b7 75TSS \u00b7 HR Zones: Z1:111m, Z2:18m, Z3:3m, Z4:1m",
+"min": 132
 },
 {
 "n": "Motorsport",
-"t": "56m \u00b7 0km \u00b7 HR Avg:129 Max:155 \u00b7 N/A Power \u00b7 536kcal \u00b7 28TSS \u00b7 HR Zones: Z1:57m"
+"t": "56m \u00b7 0km \u00b7 HR Avg:129 Max:155 \u00b7 N/A Power \u00b7 536kcal \u00b7 28TSS \u00b7 HR Zones: Z1:57m",
+"min": 56
 }
 ],
 "open": false
@@ -82,6 +88,7 @@
 "bal": 12,
 "w": null,
 "lm": null,
+"rr": 14,
 "wk": [],
 "open": false
 },
@@ -103,14 +110,17 @@
 "bal": -300,
 "w": 68.1,
 "lm": 62.4,
+"rr": 14,
 "wk": [
 {
 "n": "J\u00e1vea Hardlopen",
-"t": "60m \u00b7 12.6km \u00b7 HR Avg:149 Max:171 \u00b7 N/A Power \u00b7 814kcal \u00b7 74TSS \u00b7 HR Zones: Z1:57m, Z2:2m, Z3:1m"
+"t": "60m \u00b7 12.6km \u00b7 HR Avg:149 Max:171 \u00b7 N/A Power \u00b7 814kcal \u00b7 74TSS \u00b7 HR Zones: Z1:57m, Z2:2m, Z3:1m",
+"min": 60
 },
 {
 "n": "Strength",
-"t": "41m \u00b7 0km \u00b7 HR Avg:88 Max:145 \u00b7 N/A Power \u00b7 181kcal \u00b7 8TSS \u00b7 HR Zones: Z1:41m"
+"t": "41m \u00b7 0km \u00b7 HR Avg:88 Max:145 \u00b7 N/A Power \u00b7 181kcal \u00b7 8TSS \u00b7 HR Zones: Z1:41m",
+"min": 41
 }
 ],
 "open": false
@@ -133,14 +143,17 @@
 "bal": -164,
 "w": 68.3,
 "lm": 62.4,
+"rr": 14.3,
 "wk": [
 {
 "n": "Morning Ride",
-"t": "138m \u00b7 71.3km \u00b7 HR Avg:137 Max:164 \u00b7 208W NP \u00b7 1824kcal \u00b7 104TSS \u00b7 HR Zones: Z1:73m, Z2:61m, Z3:5m \u00b7 Power Zones: Z1:14m, Z2:108m, Z3:15m, Z4:1m, Z8:2m"
+"t": "138m \u00b7 71.3km \u00b7 HR Avg:137 Max:164 \u00b7 208W NP \u00b7 1824kcal \u00b7 104TSS \u00b7 HR Zones: Z1:73m, Z2:61m, Z3:5m \u00b7 Power Zones: Z1:14m, Z2:108m, Z3:15m, Z4:1m, Z8:2m",
+"min": 138
 },
 {
 "n": "Strength",
-"t": "26m \u00b7 0km \u00b7 HR Avg:71 Max:108 \u00b7 N/A Power \u00b7 61kcal \u00b7 2TSS \u00b7 HR Zones: Z1:26m"
+"t": "26m \u00b7 0km \u00b7 HR Avg:71 Max:108 \u00b7 N/A Power \u00b7 61kcal \u00b7 2TSS \u00b7 HR Zones: Z1:26m",
+"min": 26
 }
 ],
 "open": false
@@ -163,10 +176,12 @@
 "bal": -264,
 "w": 68.4,
 "lm": 62.8,
+"rr": 13.8,
 "wk": [
 {
 "n": "Morning Ride",
-"t": "144m \u00b7 67.2km \u00b7 HR Avg:143 Max:192 \u00b7 220W NP \u00b7 1873kcal \u00b7 121TSS \u00b7 HR Zones: Z1:65m, Z2:52m, Z3:15m, Z4:8m, Z5:4m \u00b7 Power Zones: Z1:27m, Z2:85m, Z3:17m, Z4:11m, Z5:4m, Z8:11m"
+"t": "144m \u00b7 67.2km \u00b7 HR Avg:143 Max:192 \u00b7 220W NP \u00b7 1873kcal \u00b7 121TSS \u00b7 HR Zones: Z1:65m, Z2:52m, Z3:15m, Z4:8m, Z5:4m \u00b7 Power Zones: Z1:27m, Z2:85m, Z3:17m, Z4:11m, Z5:4m, Z8:11m",
+"min": 144
 }
 ],
 "open": false
@@ -189,14 +204,17 @@
 "bal": -326,
 "w": 68.7,
 "lm": 62.3,
+"rr": 14.3,
 "wk": [
 {
 "n": "Strength",
-"t": "41m \u00b7 0km \u00b7 HR Avg:83 Max:127 \u00b7 N/A Power \u00b7 144kcal \u00b7 6TSS \u00b7 HR Zones: Z1:41m"
+"t": "41m \u00b7 0km \u00b7 HR Avg:83 Max:127 \u00b7 N/A Power \u00b7 144kcal \u00b7 6TSS \u00b7 HR Zones: Z1:41m",
+"min": 41
 },
 {
 "n": "Morning Ride",
-"t": "128m \u00b7 63.3km \u00b7 HR Avg:146 Max:162 \u00b7 221W NP \u00b7 1816kcal \u00b7 108TSS \u00b7 HR Zones: Z1:27m, Z2:84m, Z3:17m \u00b7 Power Zones: Z1:9m, Z2:73m, Z3:45m, Z8:1m"
+"t": "128m \u00b7 63.3km \u00b7 HR Avg:146 Max:162 \u00b7 221W NP \u00b7 1816kcal \u00b7 108TSS \u00b7 HR Zones: Z1:27m, Z2:84m, Z3:17m \u00b7 Power Zones: Z1:9m, Z2:73m, Z3:45m, Z8:1m",
+"min": 128
 }
 ],
 "open": false
@@ -219,10 +237,12 @@
 "bal": -669,
 "w": 68.5,
 "lm": 62.7,
+"rr": 14.5,
 "wk": [
 {
 "n": "Morning Ride",
-"t": "120m \u00b7 61.0km \u00b7 HR Avg:149 Max:181 \u00b7 239W NP \u00b7 1734kcal \u00b7 118TSS \u00b7 HR Zones: Z1:29m, Z2:61m, Z3:10m, Z4:20m \u00b7 Power Zones: Z1:15m, Z2:44m, Z3:36m, Z4:24m, Z8:25m"
+"t": "120m \u00b7 61.0km \u00b7 HR Avg:149 Max:181 \u00b7 239W NP \u00b7 1734kcal \u00b7 118TSS \u00b7 HR Zones: Z1:29m, Z2:61m, Z3:10m, Z4:20m \u00b7 Power Zones: Z1:15m, Z2:44m, Z3:36m, Z4:24m, Z8:25m",
+"min": 120
 }
 ],
 "open": false
@@ -245,6 +265,7 @@
 "bal": 75,
 "w": null,
 "lm": null,
+"rr": 14.4,
 "wk": [],
 "open": false
 },
@@ -266,14 +287,17 @@
 "bal": -594,
 "w": 68.5,
 "lm": 62.3,
+"rr": 14.3,
 "wk": [
 {
 "n": "Strength",
-"t": "71m \u00b7 0km \u00b7 HR Avg:91 Max:127 \u00b7 N/A Power \u00b7 302kcal \u00b7 14TSS \u00b7 HR Zones: Z1:72m"
+"t": "71m \u00b7 0km \u00b7 HR Avg:91 Max:127 \u00b7 N/A Power \u00b7 302kcal \u00b7 14TSS \u00b7 HR Zones: Z1:72m",
+"min": 71
 },
 {
 "n": "Morning Ride",
-"t": "148m \u00b7 74.2km \u00b7 HR Avg:148 Max:165 \u00b7 220W NP \u00b7 2066kcal \u00b7 124TSS \u00b7 HR Zones: Z1:26m, Z2:96m, Z3:26m \u00b7 Power Zones: Z1:14m, Z2:79m, Z3:54m, Z4:1m, Z8:2m"
+"t": "148m \u00b7 74.2km \u00b7 HR Avg:148 Max:165 \u00b7 220W NP \u00b7 2066kcal \u00b7 124TSS \u00b7 HR Zones: Z1:26m, Z2:96m, Z3:26m \u00b7 Power Zones: Z1:14m, Z2:79m, Z3:54m, Z4:1m, Z8:2m",
+"min": 148
 }
 ],
 "open": false
@@ -296,6 +320,7 @@
 "bal": -222,
 "w": null,
 "lm": null,
+"rr": 14.4,
 "wk": [],
 "open": false
 },
@@ -317,10 +342,12 @@
 "bal": 76,
 "w": null,
 "lm": null,
+"rr": 14.5,
 "wk": [
 {
 "n": "Morning Run",
-"t": "50m \u00b7 10.5km \u00b7 HR Avg:145 Max:157 \u00b7 N/A Power \u00b7 663kcal \u00b7 61TSS \u00b7 HR Zones: Z1:50m"
+"t": "50m \u00b7 10.5km \u00b7 HR Avg:145 Max:157 \u00b7 N/A Power \u00b7 663kcal \u00b7 61TSS \u00b7 HR Zones: Z1:50m",
+"min": 50
 }
 ],
 "open": false
@@ -343,14 +370,17 @@
 "bal": null,
 "w": null,
 "lm": null,
+"rr": 14.4,
 "wk": [
 {
 "n": "Strength",
-"t": "57m \u00b7 0km \u00b7 HR Avg:86 Max:158 \u00b7 N/A Power \u00b7 228kcal \u00b7 10TSS \u00b7 HR Zones: Z1:57m"
+"t": "57m \u00b7 0km \u00b7 HR Avg:86 Max:158 \u00b7 N/A Power \u00b7 228kcal \u00b7 10TSS \u00b7 HR Zones: Z1:57m",
+"min": 57
 },
 {
 "n": "Dorval Hardlopen",
-"t": "54m \u00b7 12.3km \u00b7 HR Avg:160 Max:186 \u00b7 N/A Power \u00b7 805kcal \u00b7 77TSS \u00b7 HR Zones: Z1:28m, Z2:2m, Z3:7m, Z4:17m"
+"t": "54m \u00b7 12.3km \u00b7 HR Avg:160 Max:186 \u00b7 N/A Power \u00b7 805kcal \u00b7 77TSS \u00b7 HR Zones: Z1:28m, Z2:2m, Z3:7m, Z4:17m",
+"min": 54
 }
 ],
 "open": false
@@ -373,6 +403,7 @@
 "bal": null,
 "w": null,
 "lm": null,
+"rr": null,
 "wk": [],
 "open": true
 }
