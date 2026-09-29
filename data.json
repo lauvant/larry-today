@@ -1,5 +1,5 @@
 {
-"generated": "29 Sep 14:02",
+"generated": "29 Sep 14:30",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -408,17 +408,23 @@
 "dp": 1.6,
 "rem": 1.6,
 "aw": 1.5,
-"ctl": 78.8,
-"atl": 65,
-"tsb": 13.8,
-"tss": 0,
-"act": 0,
+"ctl": 80.8,
+"atl": 76.2,
+"tsb": 4.6,
+"tss": 84,
+"act": 939,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14.5,
-"wk": [],
+"wk": [
+{
+"n": "Dorval Hardlopen",
+"t": "74m \u00b7 15.0km \u00b7 HR Avg:141 Max:153 \u00b7 N/A Power \u00b7 939kcal \u00b7 84TSS \u00b7 HR Zones: Z1:74m",
+"min": 74
+}
+],
 "open": true
 }
 ],
