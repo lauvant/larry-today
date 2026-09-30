@@ -1,5 +1,5 @@
 {
-"generated": "30 Sep 02:32",
+"generated": "30 Sep 02:56",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -384,8 +384,8 @@
 "tsb": 4.6,
 "tss": 84,
 "act": 939,
-"in": null,
-"bal": null,
+"in": 2694,
+"bal": -95,
 "w": null,
 "lm": null,
 "rr": 14.5,
@@ -428,7 +428,7 @@
 "carbs": 385,
 "protein": 121.2,
 "fat": 75.7,
-"updated": "00:20"
+"updated": "00:42"
 },
 "2026-09-28": {
 "kcal": 2507,
