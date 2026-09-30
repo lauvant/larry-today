@@ -1,5 +1,5 @@
 {
-"generated": "01 Oct 00:24",
+"generated": "01 Oct 00:36",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,40 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-09-17",
-"d": "09-17",
-"hrv": 37,
-"rhr": 49,
-"shr": 51.375,
-"sl": 1.8,
-"dp": 0.6,
-"rem": 0.1,
-"aw": 1.5,
-"ctl": 82.4,
-"atl": 80.9,
-"tsb": 1.5,
-"tss": 103,
-"act": 1396,
-"in": 3117,
-"bal": -129,
-"w": null,
-"lm": null,
-"rr": 14.9,
-"wk": [
-{
-"n": "Portim\u00e3o Motorsport",
-"t": "132m \u00b7 2.9km \u00b7 HR Avg:117 Max:161 \u00b7 N/A Power \u00b7 860kcal \u00b7 75TSS \u00b7 HR Zones: Z1:111m, Z2:18m, Z3:3m, Z4:1m",
-"min": 132
-},
-{
-"n": "Motorsport",
-"t": "56m \u00b7 0km \u00b7 HR Avg:129 Max:155 \u00b7 N/A Power \u00b7 536kcal \u00b7 28TSS \u00b7 HR Zones: Z1:57m",
-"min": 56
-}
-],
-"open": false
-},
 {
 "date": "2026-09-18",
 "d": "09-18",
@@ -420,6 +386,29 @@
 "rr": 14.5,
 "wk": [],
 "open": false
+},
+{
+"date": "2026-10-01",
+"d": "10-01",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 77,
+"atl": 57.2,
+"tsb": 19.8,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
+"open": true
 }
 ],
 "intake": {
