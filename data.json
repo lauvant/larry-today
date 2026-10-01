@@ -1,5 +1,5 @@
 {
-"generated": "01 Oct 18:02",
+"generated": "01 Oct 18:25",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -397,17 +397,23 @@
 "dp": 1.6,
 "rem": 1.5,
 "aw": 1.8,
-"ctl": 77,
-"atl": 57.2,
-"tsb": 19.8,
-"tss": 0,
-"act": 0,
+"ctl": 77.4,
+"atl": 59.4,
+"tsb": 18,
+"tss": 16,
+"act": 303,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14.8,
-"wk": [],
+"wk": [
+{
+"n": "Middagtraining",
+"t": "32m \u00b7 98.3km \u00b7 HR Avg:126 Max:164 \u00b7 N/A Power \u00b7 303kcal \u00b7 16TSS \u00b7 HR Zones: Z1:31m, Z2:1m",
+"min": 32
+}
+],
 "open": true
 }
 ],
