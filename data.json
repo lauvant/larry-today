@@ -1,5 +1,5 @@
 {
-"generated": "01 Oct 08:32",
+"generated": "01 Oct 08:56",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -391,12 +391,12 @@
 "date": "2026-10-01",
 "d": "10-01",
 "hrv": 45,
-"rhr": 46,
-"shr": 49.5,
-"sl": 4,
+"rhr": 44,
+"shr": 49,
+"sl": 4.8,
 "dp": 1.1,
-"rem": 0.6,
-"aw": 0.7,
+"rem": 0.8,
+"aw": 0.8,
 "ctl": 77,
 "atl": 57.2,
 "tsb": 19.8,
@@ -406,7 +406,7 @@
 "bal": null,
 "w": null,
 "lm": null,
-"rr": 14.9,
+"rr": 14.8,
 "wk": [],
 "open": true
 }
