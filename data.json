@@ -1,5 +1,5 @@
 {
-"generated": "02 Oct 00:22",
+"generated": "02 Oct 00:35",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,29 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-09-18",
-"d": "09-18",
-"hrv": 74,
-"rhr": 42,
-"shr": 44.875,
-"sl": 6.5,
-"dp": 1.9,
-"rem": 1.6,
-"aw": 1,
-"ctl": 80.5,
-"atl": 70.1,
-"tsb": 10.4,
-"tss": 0,
-"act": 0,
-"in": 1862,
-"bal": 12,
-"w": null,
-"lm": null,
-"rr": 14,
-"wk": [],
-"open": false
-},
 {
 "date": "2026-09-19",
 "d": "09-19",
@@ -420,15 +397,38 @@
 }
 ],
 "open": false
+},
+{
+"date": "2026-10-02",
+"d": "10-02",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 76.3,
+"atl": 54.8,
+"tsb": 21.5,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
+"open": true
 }
 ],
 "intake": {
 "2026-10-01": {
-"kcal": 1418,
-"carbs": 215.2,
-"protein": 67.1,
-"fat": 30.1,
-"updated": "20:52"
+"kcal": 2141,
+"carbs": 312.7,
+"protein": 120.6,
+"fat": 40.4,
+"updated": "22:29"
 },
 "2026-09-30": {
 "kcal": 1841,
