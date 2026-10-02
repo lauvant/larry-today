@@ -1,5 +1,5 @@
 {
-"generated": "02 Oct 23:50",
+"generated": "03 Oct 00:01",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -430,7 +430,7 @@
 "min": 18
 }
 ],
-"open": true
+"open": false
 }
 ],
 "intake": {
