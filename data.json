@@ -1,5 +1,5 @@
 {
-"generated": "02 Oct 02:55",
+"generated": "02 Oct 03:04",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -377,14 +377,19 @@
 "ctl": 78.1,
 "atl": 63.2,
 "tsb": 14.9,
-"tss": 45,
-"act": 620,
+"tss": 72,
+"act": 953,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14.8,
 "wk": [
+{
+"n": "Hall County Motorsport",
+"t": "31m \u00b7 98.4km \u00b7 HR Avg:134 Max:155 \u00b7 N/A Power \u00b7 333kcal \u00b7 27TSS \u00b7 HR Zones: Z1:6m, Z2:16m, Z3:8m, Z4:1m",
+"min": 31
+},
 {
 "n": "Hall County Motorsport",
 "t": "25m \u00b7 78.6km \u00b7 HR Avg:145 Max:182 \u00b7 N/A Power \u00b7 317kcal \u00b7 29TSS \u00b7 HR Zones: Z1:3m, Z2:5m, Z3:10m, Z4:4m, Z5:2m, Z6:1m, Z7:1m",
@@ -408,9 +413,9 @@
 "dp": null,
 "rem": null,
 "aw": null,
-"ctl": 76.3,
-"atl": 54.8,
-"tsb": 21.5,
+"ctl": 76.9,
+"atl": 57.9,
+"tsb": 19,
 "tss": 0,
 "act": 0,
 "in": null,
