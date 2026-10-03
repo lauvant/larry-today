@@ -1,5 +1,5 @@
 {
-"generated": "03 Oct 16:32",
+"generated": "03 Oct 20:37",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -408,27 +408,33 @@
 "dp": 1.1,
 "rem": 1.5,
 "aw": 2,
-"ctl": 75.7,
-"atl": 53.4,
-"tsb": 22.3,
-"tss": 0,
-"act": 0,
+"ctl": 78,
+"atl": 66.4,
+"tsb": 11.6,
+"tss": 97,
+"act": 889,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14.6,
-"wk": [],
+"wk": [
+{
+"n": "Hall County Motorsport",
+"t": "99m \u00b7 266.4km \u00b7 HR Avg:138 Max:170 \u00b7 N/A Power \u00b7 889kcal \u00b7 97TSS \u00b7 HR Zones: Z1:31m, Z2:15m, Z3:20m, Z4:27m, Z5:6m",
+"min": 99
+}
+],
 "open": true
 }
 ],
 "intake": {
 "2026-10-03": {
-"kcal": 887,
-"carbs": 176.3,
-"protein": 20.3,
-"fat": 15.1,
-"updated": "14:02"
+"kcal": 1941,
+"carbs": 346.3,
+"protein": 67.3,
+"fat": 34.1,
+"updated": "18:30"
 },
 "2026-10-02": {
 "kcal": 2498,
