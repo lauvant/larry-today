@@ -1,5 +1,5 @@
 {
-"generated": "03 Oct 02:54",
+"generated": "03 Oct 03:03",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -384,8 +384,8 @@
 "tsb": 15.8,
 "tss": 28,
 "act": 258,
-"in": null,
-"bal": null,
+"in": 2498,
+"bal": 390,
 "w": null,
 "lm": null,
 "rr": 14.3,
