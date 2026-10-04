@@ -1,5 +1,5 @@
 {
-"generated": "05 Oct 00:23",
+"generated": "05 Oct 00:36",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,35 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-09-21",
-"d": "09-21",
-"hrv": 74,
-"rhr": 42,
-"shr": 44.75,
-"sl": 6.2,
-"dp": 1.3,
-"rem": 1.4,
-"aw": 1.3,
-"ctl": 82.1,
-"atl": 82.2,
-"tsb": -0.1,
-"tss": 121,
-"act": 1873,
-"in": 3459,
-"bal": -264,
-"w": 68.4,
-"lm": 62.8,
-"rr": 13.8,
-"wk": [
-{
-"n": "Morning Ride",
-"t": "144m \u00b7 67.2km \u00b7 HR Avg:143 Max:192 \u00b7 220W NP \u00b7 1873kcal \u00b7 121TSS \u00b7 HR Zones: Z1:65m, Z2:52m, Z3:15m, Z4:8m, Z5:4m \u00b7 Power Zones: Z1:27m, Z2:85m, Z3:17m, Z4:11m, Z5:4m, Z8:11m",
-"min": 144
-}
-],
-"open": false
-},
 {
 "date": "2026-09-22",
 "d": "09-22",
@@ -420,6 +391,29 @@
 "rr": 15.1,
 "wk": [],
 "open": false
+},
+{
+"date": "2026-10-05",
+"d": "10-05",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 77.8,
+"atl": 65.3,
+"tsb": 12.5,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
+"open": true
 }
 ],
 "intake": {
