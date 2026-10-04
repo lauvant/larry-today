@@ -1,5 +1,5 @@
 {
-"generated": "04 Oct 14:26",
+"generated": "04 Oct 20:18",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -379,8 +379,8 @@
 "tsb": 11.6,
 "tss": 251,
 "act": 2230,
-"in": null,
-"bal": null,
+"in": 3008,
+"bal": -1072,
 "w": null,
 "lm": null,
 "rr": 14.6,
@@ -423,12 +423,19 @@
 }
 ],
 "intake": {
+"2026-10-04": {
+"kcal": 1205,
+"carbs": 105,
+"protein": 55.5,
+"fat": 60,
+"updated": "17:37"
+},
 "2026-10-03": {
-"kcal": 2638,
-"carbs": 463.4,
-"protein": 78.6,
-"fat": 55.7,
-"updated": "22:40"
+"kcal": 3008,
+"carbs": 511.4,
+"protein": 82.6,
+"fat": 73.7,
+"updated": "14:22"
 },
 "2026-10-02": {
 "kcal": 2498,
@@ -436,13 +443,6 @@
 "protein": 125,
 "fat": 55.7,
 "updated": "00:23"
-},
-"2026-10-01": {
-"kcal": 2654,
-"carbs": 390.9,
-"protein": 131,
-"fat": 60.7,
-"updated": "02:53"
 }
 }
 }
