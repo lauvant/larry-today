@@ -1,5 +1,5 @@
 {
-"generated": "06 Oct 12:03",
+"generated": "06 Oct 12:25",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -391,17 +391,23 @@
 "dp": 1.8,
 "rem": 0.8,
 "aw": 2,
-"ctl": 76,
-"atl": 56.6,
-"tsb": 19.4,
-"tss": 0,
-"act": 0,
+"ctl": 76.6,
+"atl": 59.8,
+"tsb": 16.8,
+"tss": 24,
+"act": 333,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 13.9,
-"wk": [],
+"wk": [
+{
+"n": "Hardlopen op een loopband",
+"t": "25m \u00b7 4.7km \u00b7 HR Avg:141 Max:197 \u00b7 N/A Power \u00b7 333kcal \u00b7 24TSS \u00b7 HR Zones: Z1:17m, Z2:1m, Z3:2m, Z4:3m, Z6:1m",
+"min": 25
+}
+],
 "open": true
 }
 ],
