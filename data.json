@@ -1,5 +1,5 @@
 {
-"generated": "07 Oct 13:04",
+"generated": "07 Oct 13:25",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -391,27 +391,33 @@
 "dp": 2.1,
 "rem": 1.1,
 "aw": 1.6,
-"ctl": 74.8,
-"atl": 51.8,
-"tsb": 23,
-"tss": 0,
-"act": 0,
+"ctl": 76.9,
+"atl": 63.9,
+"tsb": 13,
+"tss": 91,
+"act": 1574,
 "in": null,
 "bal": null,
 "w": 68.4,
 "lm": 62.3,
 "rr": 14.5,
-"wk": [],
+"wk": [
+{
+"n": "Morning Ride",
+"t": "115m \u00b7 59.3km \u00b7 HR Avg:142 Max:161 \u00b7 213W NP \u00b7 1574kcal \u00b7 91TSS \u00b7 HR Zones: Z1:38m, Z2:77m \u00b7 Power Zones: Z1:9m, Z2:85m, Z3:20m, Z4:1m, Z8:1m",
+"min": 115
+}
+],
 "open": true
 }
 ],
 "intake": {
 "2026-10-07": {
-"kcal": 707,
-"carbs": 106.8,
-"protein": 20.9,
-"fat": 20.9,
-"updated": "06:11"
+"kcal": 1082,
+"carbs": 179.8,
+"protein": 26.9,
+"fat": 27.9,
+"updated": "11:20"
 },
 "2026-10-06": {
 "kcal": 1904,
