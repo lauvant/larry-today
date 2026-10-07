@@ -1,5 +1,5 @@
 {
-"generated": "08 Oct 00:22",
+"generated": "08 Oct 00:37",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,29 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-09-24",
-"d": "09-24",
-"hrv": 63,
-"rhr": 44,
-"shr": 46.125,
-"sl": 5.4,
-"dp": 1.2,
-"rem": 1,
-"aw": 1,
-"ctl": 81.7,
-"atl": 78.6,
-"tsb": 3.1,
-"tss": 0,
-"act": 0,
-"in": 1925,
-"bal": 75,
-"w": null,
-"lm": null,
-"rr": 14.4,
-"wk": [],
-"open": false
-},
 {
 "date": "2026-09-25",
 "d": "09-25",
@@ -409,6 +386,29 @@
 }
 ],
 "open": false
+},
+{
+"date": "2026-10-08",
+"d": "10-08",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 75.1,
+"atl": 55.4,
+"tsb": 19.7,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
+"open": true
 }
 ],
 "intake": {
