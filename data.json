@@ -1,5 +1,5 @@
 {
-"generated": "09 Oct 18:41",
+"generated": "09 Oct 18:56",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -419,11 +419,11 @@
 ],
 "intake": {
 "2026-10-09": {
-"kcal": 1506,
-"carbs": 242.5,
-"protein": 58.2,
-"fat": 36.4,
-"updated": "13:40"
+"kcal": 2167,
+"carbs": 307.2,
+"protein": 108.9,
+"fat": 55.9,
+"updated": "16:43"
 },
 "2026-10-08": {
 "kcal": 3369,
