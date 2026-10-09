@@ -1,5 +1,5 @@
 {
-"generated": "09 Oct 20:03",
+"generated": "2026-10-09T18:23:24+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -56,7 +56,9 @@
 {
 "n": "Morning Run",
 "t": "50m \u00b7 10.5km \u00b7 HR Avg:145 Max:157 \u00b7 N/A Power \u00b7 663kcal \u00b7 61TSS \u00b7 HR Zones: Z1:50m",
-"min": 50
+"min": 50,
+"strength": false,
+"kcal": 663
 }
 ],
 "open": false
@@ -85,12 +87,16 @@
 {
 "n": "Strength",
 "t": "57m \u00b7 0km \u00b7 HR Avg:86 Max:158 \u00b7 N/A Power \u00b7 228kcal \u00b7 10TSS \u00b7 HR Zones: Z1:57m",
-"min": 57
+"min": 57,
+"strength": true,
+"kcal": 228
 },
 {
 "n": "Dorval Hardlopen",
 "t": "54m \u00b7 12.3km \u00b7 HR Avg:160 Max:186 \u00b7 N/A Power \u00b7 805kcal \u00b7 77TSS \u00b7 HR Zones: Z1:28m, Z2:2m, Z3:7m, Z4:17m",
-"min": 54
+"min": 54,
+"strength": false,
+"kcal": 805
 }
 ],
 "open": false
@@ -119,7 +125,9 @@
 {
 "n": "Dorval Hardlopen",
 "t": "74m \u00b7 15.0km \u00b7 HR Avg:141 Max:153 \u00b7 N/A Power \u00b7 939kcal \u00b7 84TSS \u00b7 HR Zones: Z1:74m",
-"min": 74
+"min": 74,
+"strength": false,
+"kcal": 939
 }
 ],
 "open": false
@@ -171,17 +179,23 @@
 {
 "n": "Hall County Motorsport",
 "t": "31m \u00b7 98.4km \u00b7 HR Avg:134 Max:155 \u00b7 N/A Power \u00b7 333kcal \u00b7 27TSS \u00b7 HR Zones: Z1:6m, Z2:16m, Z3:8m, Z4:1m",
-"min": 31
+"min": 31,
+"strength": false,
+"kcal": 333
 },
 {
 "n": "Hall County Motorsport",
 "t": "25m \u00b7 78.6km \u00b7 HR Avg:145 Max:182 \u00b7 N/A Power \u00b7 317kcal \u00b7 29TSS \u00b7 HR Zones: Z1:3m, Z2:5m, Z3:10m, Z4:4m, Z5:2m, Z6:1m, Z7:1m",
-"min": 25
+"min": 25,
+"strength": false,
+"kcal": 317
 },
 {
 "n": "Middagtraining",
 "t": "32m \u00b7 98.3km \u00b7 HR Avg:126 Max:164 \u00b7 N/A Power \u00b7 303kcal \u00b7 16TSS \u00b7 HR Zones: Z1:31m, Z2:1m",
-"min": 32
+"min": 32,
+"strength": false,
+"kcal": 303
 }
 ],
 "open": false
@@ -210,7 +224,9 @@
 {
 "n": "Hall County Motorsport",
 "t": "18m \u00b7 53.8km \u00b7 HR Avg:160 Max:192 \u00b7 N/A Power \u00b7 258kcal \u00b7 28TSS \u00b7 HR Zones: Z1:1m, Z2:1m, Z3:6m, Z4:2m, Z5:1m, Z6:1m, Z7:6m",
-"min": 18
+"min": 18,
+"strength": false,
+"kcal": 258
 }
 ],
 "open": false
@@ -239,12 +255,16 @@
 {
 "n": "Petit Le Mans \ud83e\udd47",
 "t": "122m \u00b7 310.7km \u00b7 HR Avg:150 Max:180 \u00b7 N/A Power \u00b7 1341kcal \u00b7 154TSS \u00b7 HR Zones: Z1:20m, Z2:20m, Z3:14m, Z4:20m, Z5:32m, Z6:11m, Z7:4m",
-"min": 122
+"min": 122,
+"strength": false,
+"kcal": 1341
 },
 {
 "n": "Hall County Motorsport",
 "t": "99m \u00b7 266.4km \u00b7 HR Avg:138 Max:170 \u00b7 N/A Power \u00b7 889kcal \u00b7 97TSS \u00b7 HR Zones: Z1:31m, Z2:15m, Z3:20m, Z4:27m, Z5:6m",
-"min": 99
+"min": 99,
+"strength": false,
+"kcal": 889
 }
 ],
 "open": false
@@ -319,7 +339,9 @@
 {
 "n": "Hardlopen op een loopband",
 "t": "25m \u00b7 4.7km \u00b7 HR Avg:141 Max:197 \u00b7 N/A Power \u00b7 333kcal \u00b7 24TSS \u00b7 HR Zones: Z1:17m, Z2:1m, Z3:2m, Z4:3m, Z6:1m",
-"min": 25
+"min": 25,
+"strength": false,
+"kcal": 333
 }
 ],
 "open": false
@@ -348,7 +370,9 @@
 {
 "n": "Morning Ride",
 "t": "115m \u00b7 59.3km \u00b7 HR Avg:142 Max:161 \u00b7 213W NP \u00b7 1574kcal \u00b7 91TSS \u00b7 HR Zones: Z1:38m, Z2:77m \u00b7 Power Zones: Z1:9m, Z2:85m, Z3:20m, Z4:1m, Z8:1m",
-"min": 115
+"min": 115,
+"strength": false,
+"kcal": 1574
 }
 ],
 "open": false
@@ -377,7 +401,9 @@
 {
 "n": "Morning Ride",
 "t": "113m \u00b7 58.4km \u00b7 HR Avg:151 Max:191 \u00b7 227W NP \u00b7 1631kcal \u00b7 108TSS \u00b7 HR Zones: Z1:14m, Z2:91m, Z3:6m, Z4:1m, Z5:1m \u00b7 Power Zones: Z1:14m, Z2:85m, Z3:12m, Z4:1m, Z5:1m, Z6:1m, Z7:5m",
-"min": 113
+"min": 113,
+"strength": false,
+"kcal": 1631
 }
 ],
 "open": false
@@ -406,12 +432,16 @@
 {
 "n": "Namiddagsessie krachttraining",
 "t": "39m \u00b7 0km \u00b7 HR Avg:85 Max:131 \u00b7 N/A Power \u00b7 144kcal \u00b7 6TSS \u00b7 HR Zones: Z1:39m",
-"min": 39
+"min": 39,
+"strength": true,
+"kcal": 144
 },
 {
 "n": "J\u00e1vea Hardlopen",
 "t": "54m \u00b7 11.3km \u00b7 HR Avg:151 Max:166 \u00b7 N/A Power \u00b7 711kcal \u00b7 57TSS \u00b7 HR Zones: Z1:2m, Z2:45m, Z3:6m",
-"min": 54
+"min": 54,
+"strength": false,
+"kcal": 711
 }
 ],
 "open": true
@@ -423,21 +453,21 @@
 "carbs": 307.2,
 "protein": 108.9,
 "fat": 55.9,
-"updated": "16:43"
+"updated": "2026-10-09T16:43:00.000Z"
 },
 "2026-10-08": {
 "kcal": 3369,
 "carbs": 546.8,
 "protein": 120.8,
 "fat": 74.3,
-"updated": "19:37"
+"updated": "2026-10-08T19:37:00.000Z"
 },
 "2026-10-07": {
 "kcal": 3007,
 "carbs": 490,
 "protein": 97.2,
 "fat": 69.8,
-"updated": "20:21"
+"updated": "2026-10-07T20:21:00.000Z"
 }
 }
 }
