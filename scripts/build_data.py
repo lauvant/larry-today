@@ -44,7 +44,10 @@ def parse_workouts(txt):
         chunk = chunk.strip().strip("[]")
         name, _, rest = chunk.partition(": ")
         m = re.match(r"\s*(\d+)m", rest); mins = int(m.group(1)) if m else 0
-        out.append({"n": name.split(" (")[-1].rstrip(")") if " (" in name else name, "t": rest.replace(" | ", " · "), "min": mins})
+        strength = any(k in name.lower() for k in ("weighttraining", "strength", "kracht"))
+        kc = re.search(r"(\d+)kcal", rest); kcal = int(kc.group(1)) if kc else 0
+        out.append({"n": name.split(" (")[-1].rstrip(")") if " (" in name else name, "t": rest.replace(" | ", " · "),
+                    "min": mins, "strength": strength, "kcal": kcal})
     return out
 
 today = dt.date.today()
@@ -66,8 +69,8 @@ intake = {}
 for r in query(INTAKE_DS, {"sorts": [{"property": "Day", "direction": "descending"}], "page_size": 3}):
     p = props(r)
     intake[p["Day"]] = {"kcal": p.get("kcal"), "carbs": p.get("carbs_g"), "protein": p.get("protein_g"), "fat": p.get("fat_g"),
-                        "updated": (p.get("last_updated") or "")[11:16]}
+                        "updated": p.get("last_updated") or ""}   # full ISO UTC; the page formats it in local time
 
-json.dump({"generated": dt.datetime.now().strftime("%d %b %H:%M"), "rules": RULES, "days": days, "intake": intake},
+json.dump({"generated": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"), "rules": RULES, "days": days, "intake": intake},
           open("data.json", "w"), indent=0)
 print(f"wrote {len(days)} days, intake={bool(intake)}")

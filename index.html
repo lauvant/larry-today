@@ -139,11 +139,15 @@ $("sub").textContent=today.open?"Day open. Intake fills in as you log.":"Day clo
 const has=v=>v!=null;
 
 // fuel
-const it=(DATA.intake&&DATA.intake[today.date])||{}; const target=R.baseline+today.act, eaten=it.kcal??0;
+const RMR_H=77.08;
+const netAct=d=>{const wk=d.wk||[]; if(!wk.some(w=>w.strength)) return d.act||0;
+  return Math.round((d.act||0)-wk.filter(w=>w.strength).reduce((a,w)=>a+RMR_H*(w.min||0)/60,0));};
+const hm=iso=>{if(!iso) return ""; const t=new Date(iso.length<=5?"":iso); return isNaN(t)?iso:t.toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"});};
+const it=(DATA.intake&&DATA.intake[today.date])||{}; const target=R.baseline+netAct(today), eaten=it.kcal??0;
 $("fill").style.width=Math.min(100,eaten/target*100)+"%";
 $("eaten").textContent=eaten.toLocaleString();
 $("target").textContent=target.toLocaleString();
-$("balance").textContent=`Balance ${(eaten-target>=0?"+":"")+(eaten-target)}${it.updated?" · logged "+it.updated:""}`;
+$("balance").textContent=`Balance ${(eaten-target>=0?"+":"")+(eaten-target)}${it.updated?" · logged "+hm(it.updated):""}`;
 // rolling EA over the last 7 closed days
 const closed=days.filter(x=>x.in!=null).slice(-7);
 const ea=closed.reduce((a,x)=>a+(x.in-x.act),0)/closed.length/ffm;
@@ -184,7 +188,7 @@ $("stages").innerHTML=`<div class="stages">${[["Deep",today.dp,"var(--ink)"],["R
 const cols=[["Day",d=>d.d.replace("09-","")],["HRV",d=>d.hrv??"—"],["Slp HR",d=>has(d.shr)?d.shr.toFixed(1):"—"],["Sleep",d=>has(d.sl)?d.sl.toFixed(1):"—"],["Deep",d=>has(d.dp)?d.dp.toFixed(1):"—"],["TSS",d=>d.tss],["In",d=>d.in??"—"],["Bal",d=>d.bal==null?"—":(d.bal>0?"+":"")+d.bal],["Wt",d=>d.w??"—"]];
 $("hist").innerHTML=`<tr>${cols.map(c=>`<th>${c[0]}</th>`).join("")}</tr>`+days.slice().reverse().map(d=>`<tr${d.open?' class="today"':""}>${cols.map(c=>`<td>${c[1](d)}</td>`).join("")}</tr>`).join("");
 
-$("foot").textContent=`Athlete Log + Daily intake, updated ${DATA.generated}.`;
+$("foot").textContent=`Athlete Log + Daily intake, updated ${hm(DATA.generated)||DATA.generated}.`;
 }
 </script>
 </body>
