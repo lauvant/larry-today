@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-10T11:51:33+00:00",
+"generated": "2026-10-10T12:01:59+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -433,17 +433,25 @@
 "dp": 1.5,
 "rem": 1.5,
 "aw": 1.9,
-"ctl": 75.5,
-"atl": 59.7,
-"tsb": 15.8,
-"tss": 0,
-"act": 0,
+"ctl": 78.5,
+"atl": 77,
+"tsb": 1.5,
+"tss": 130,
+"act": 1852,
 "in": null,
 "bal": null,
 "w": 68.2,
 "lm": 62.1,
 "rr": 14,
-"wk": [],
+"wk": [
+{
+"n": "Morning Ride",
+"t": "124m \u00b7 64.5km \u00b7 HR Avg:150 Max:183 \u00b7 238W NP \u00b7 1852kcal \u00b7 130TSS \u00b7 HR Zones: Z1:25m, Z2:79m, Z3:4m, Z4:13m, Z5:3m \u00b7 Power Zones: Z1:14m, Z2:79m, Z3:10m, Z4:15m, Z5:6m, Z7:14m",
+"min": 124,
+"strength": false,
+"kcal": 1852
+}
+],
 "open": true
 }
 ],
