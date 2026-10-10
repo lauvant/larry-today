@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-10T00:36:10+00:00",
+"generated": "2026-10-10T01:00:30+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -426,13 +426,13 @@
 {
 "date": "2026-10-10",
 "d": "10-10",
-"hrv": null,
-"rhr": null,
-"shr": null,
-"sl": null,
-"dp": null,
-"rem": null,
-"aw": null,
+"hrv": 55,
+"rhr": 47,
+"shr": 50,
+"sl": 3.4,
+"dp": 1.1,
+"rem": 0.6,
+"aw": 1,
 "ctl": 75.5,
 "atl": 59.7,
 "tsb": 15.8,
@@ -442,7 +442,7 @@
 "bal": null,
 "w": null,
 "lm": null,
-"rr": null,
+"rr": 14,
 "wk": [],
 "open": true
 }
