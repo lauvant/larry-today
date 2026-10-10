@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-10T22:23:03+00:00",
+"generated": "2026-10-10T22:37:13+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,37 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-09-27",
-"d": "09-27",
-"hrv": 59,
-"rhr": 44,
-"shr": 47,
-"sl": 7.1,
-"dp": 1.6,
-"rem": 1.5,
-"aw": 0.9,
-"ctl": 80.6,
-"atl": 73.1,
-"tsb": 7.5,
-"tss": 61,
-"act": 663,
-"in": 2589,
-"bal": 76,
-"w": null,
-"lm": null,
-"rr": 14.5,
-"wk": [
-{
-"n": "Morning Run",
-"t": "50m \u00b7 10.5km \u00b7 HR Avg:145 Max:157 \u00b7 N/A Power \u00b7 663kcal \u00b7 61TSS \u00b7 HR Zones: Z1:50m",
-"min": 50,
-"strength": false,
-"kcal": 663
-}
-],
-"open": false
-},
 {
 "date": "2026-09-28",
 "d": "09-28",
@@ -438,8 +407,8 @@
 "tsb": 1.5,
 "tss": 130,
 "act": 1852,
-"in": null,
-"bal": null,
+"in": 3428,
+"bal": -274,
 "w": 68.2,
 "lm": 62.1,
 "rr": 14,
@@ -453,6 +422,29 @@
 }
 ],
 "open": false
+},
+{
+"date": "2026-10-11",
+"d": "10-11",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 76.7,
+"atl": 66.8,
+"tsb": 9.9,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
+"open": true
 }
 ],
 "intake": {
