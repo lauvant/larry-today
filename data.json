@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-11T22:24:50+00:00",
+"generated": "2026-10-11T22:38:15+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,44 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-09-28",
-"d": "09-28",
-"hrv": 49,
-"rhr": 44,
-"shr": 47.75,
-"sl": 7,
-"dp": 1.1,
-"rem": 1.2,
-"aw": 1,
-"ctl": 80.7,
-"atl": 75,
-"tsb": 5.7,
-"tss": 87,
-"act": 1033,
-"in": 2507,
-"bal": -376,
-"w": null,
-"lm": null,
-"rr": 14.4,
-"wk": [
-{
-"n": "Strength",
-"t": "57m \u00b7 0km \u00b7 HR Avg:86 Max:158 \u00b7 N/A Power \u00b7 228kcal \u00b7 10TSS \u00b7 HR Zones: Z1:57m",
-"min": 57,
-"strength": true,
-"kcal": 228
-},
-{
-"n": "Dorval Hardlopen",
-"t": "54m \u00b7 12.3km \u00b7 HR Avg:160 Max:186 \u00b7 N/A Power \u00b7 805kcal \u00b7 77TSS \u00b7 HR Zones: Z1:28m, Z2:2m, Z3:7m, Z4:17m",
-"min": 54,
-"strength": false,
-"kcal": 805
-}
-],
-"open": false
-},
 {
 "date": "2026-09-29",
 "d": "09-29",
@@ -438,8 +400,8 @@
 "tsb": 0.5,
 "tss": 86,
 "act": 1465,
-"in": null,
-"bal": null,
+"in": 3053,
+"bal": -262,
 "w": 68.8,
 "lm": 62.7,
 "rr": 14.1,
@@ -460,6 +422,29 @@
 }
 ],
 "open": false
+},
+{
+"date": "2026-10-12",
+"d": "10-12",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 76.9,
+"atl": 67.8,
+"tsb": 9.1,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
+"open": true
 }
 ],
 "intake": {
