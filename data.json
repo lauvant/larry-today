@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-12T21:53:00+00:00",
+"generated": "2026-10-12T22:02:55+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -444,7 +444,7 @@
 "lm": 63,
 "rr": 14.3,
 "wk": [],
-"open": true
+"open": false
 }
 ],
 "intake": {
