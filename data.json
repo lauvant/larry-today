@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-14T22:14:08+00:00",
+"generated": "2026-10-14T22:40:27+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,51 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-10-01",
-"d": "10-01",
-"hrv": 41,
-"rhr": 44,
-"shr": 49,
-"sl": 7.7,
-"dp": 1.6,
-"rem": 1.5,
-"aw": 1.8,
-"ctl": 78.1,
-"atl": 63.2,
-"tsb": 14.9,
-"tss": 72,
-"act": 953,
-"in": 2654,
-"bal": -149,
-"w": null,
-"lm": null,
-"rr": 14.8,
-"wk": [
-{
-"n": "Hall County Motorsport",
-"t": "31m \u00b7 98.4km \u00b7 HR Avg:134 Max:155 \u00b7 N/A Power \u00b7 333kcal \u00b7 27TSS \u00b7 HR Zones: Z1:6m, Z2:16m, Z3:8m, Z4:1m",
-"min": 31,
-"strength": false,
-"kcal": 333
-},
-{
-"n": "Hall County Motorsport",
-"t": "25m \u00b7 78.6km \u00b7 HR Avg:145 Max:182 \u00b7 N/A Power \u00b7 317kcal \u00b7 29TSS \u00b7 HR Zones: Z1:3m, Z2:5m, Z3:10m, Z4:4m, Z5:2m, Z6:1m, Z7:1m",
-"min": 25,
-"strength": false,
-"kcal": 317
-},
-{
-"n": "Middagtraining",
-"t": "32m \u00b7 98.3km \u00b7 HR Avg:126 Max:164 \u00b7 N/A Power \u00b7 303kcal \u00b7 16TSS \u00b7 HR Zones: Z1:31m, Z2:1m",
-"min": 32,
-"strength": false,
-"kcal": 303
-}
-],
-"open": false
-},
 {
 "date": "2026-10-02",
 "d": "10-02",
@@ -438,13 +393,36 @@
 "tsb": 15.9,
 "tss": 0,
 "act": 0,
-"in": null,
-"bal": null,
+"in": 2114,
+"bal": 264,
 "w": null,
 "lm": null,
 "rr": 14.5,
 "wk": [],
 "open": false
+},
+{
+"date": "2026-10-15",
+"d": "10-15",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 73.1,
+"atl": 51.2,
+"tsb": 21.9,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
+"open": true
 }
 ],
 "intake": {
