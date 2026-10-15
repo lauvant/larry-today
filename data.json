@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-15T06:06:34+00:00",
+"generated": "2026-10-15T06:45:40+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -411,21 +411,36 @@
 "dp": 1.4,
 "rem": 1.7,
 "aw": 1.4,
-"ctl": 73.1,
-"atl": 51.2,
-"tsb": 21.9,
-"tss": 0,
-"act": 0,
+"ctl": 73.3,
+"atl": 52,
+"tsb": 21.3,
+"tss": 6,
+"act": 139,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14.5,
-"wk": [],
+"wk": [
+{
+"n": "Strength",
+"t": "42m \u00b7 0km \u00b7 HR Avg:81 Max:137 \u00b7 N/A Power \u00b7 139kcal \u00b7 6TSS \u00b7 HR Zones: Z1:42m",
+"min": 42,
+"strength": true,
+"kcal": 139
+}
+],
 "open": true
 }
 ],
 "intake": {
+"2026-10-15": {
+"kcal": 658,
+"carbs": 76.4,
+"protein": 22,
+"fat": 28.3,
+"updated": "2026-10-15T06:39:00.000Z"
+},
 "2026-10-14": {
 "kcal": 2114,
 "carbs": 202.7,
@@ -439,13 +454,6 @@
 "protein": 115.8,
 "fat": 41.7,
 "updated": "2026-10-13T21:23:00.000Z"
-},
-"2026-10-12": {
-"kcal": 1868,
-"carbs": 255,
-"protein": 66.7,
-"fat": 64.4,
-"updated": "2026-10-12T19:26:00.000Z"
 }
 }
 }
