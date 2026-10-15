@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-15T09:39:12+00:00",
+"generated": "2026-10-15T10:09:06+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -411,17 +411,24 @@
 "dp": 1.4,
 "rem": 1.7,
 "aw": 1.4,
-"ctl": 73.3,
-"atl": 52,
-"tsb": 21.3,
-"tss": 6,
-"act": 139,
+"ctl": 74,
+"atl": 56.4,
+"tsb": 17.6,
+"tss": 39,
+"act": 495,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14.5,
 "wk": [
+{
+"n": "Hardlopen op een loopband",
+"t": "30m \u00b7 6.4km \u00b7 HR Avg:141 Max:154 \u00b7 N/A Power \u00b7 356kcal \u00b7 33TSS \u00b7 HR Zones: Z1:11m, Z2:18m",
+"min": 30,
+"strength": false,
+"kcal": 356
+},
 {
 "n": "Strength",
 "t": "42m \u00b7 0km \u00b7 HR Avg:81 Max:137 \u00b7 N/A Power \u00b7 139kcal \u00b7 6TSS \u00b7 HR Zones: Z1:42m",
