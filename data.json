@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-16T22:04:39+00:00",
+"generated": "2026-10-16T22:35:18+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,44 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-10-03",
-"d": "10-03",
-"hrv": 60,
-"rhr": 43,
-"shr": 46.875,
-"sl": 7.4,
-"dp": 1.1,
-"rem": 1.5,
-"aw": 2,
-"ctl": 78,
-"atl": 66.4,
-"tsb": 11.6,
-"tss": 251,
-"act": 2230,
-"in": 3008,
-"bal": -1072,
-"w": null,
-"lm": null,
-"rr": 14.6,
-"wk": [
-{
-"n": "Petit Le Mans \ud83e\udd47",
-"t": "122m \u00b7 310.7km \u00b7 HR Avg:150 Max:180 \u00b7 N/A Power \u00b7 1341kcal \u00b7 154TSS \u00b7 HR Zones: Z1:20m, Z2:20m, Z3:14m, Z4:20m, Z5:32m, Z6:11m, Z7:4m",
-"min": 122,
-"strength": false,
-"kcal": 1341
-},
-{
-"n": "Hall County Motorsport",
-"t": "99m \u00b7 266.4km \u00b7 HR Avg:138 Max:170 \u00b7 N/A Power \u00b7 889kcal \u00b7 97TSS \u00b7 HR Zones: Z1:31m, Z2:15m, Z3:20m, Z4:27m, Z5:6m",
-"min": 99,
-"strength": false,
-"kcal": 889
-}
-],
-"open": false
-},
 {
 "date": "2026-10-04",
 "d": "10-04",
@@ -438,6 +400,29 @@
 }
 ],
 "open": false
+},
+{
+"date": "2026-10-17",
+"d": "10-17",
+"hrv": 36,
+"rhr": 57,
+"shr": 63.25,
+"sl": 1.6,
+"dp": 0.2,
+"rem": 0,
+"aw": 1.1,
+"ctl": 73.4,
+"atl": 56.3,
+"tsb": 17.1,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
+"open": true
 }
 ],
 "intake": {
