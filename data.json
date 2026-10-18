@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-18T14:01:15+00:00",
+"generated": "2026-10-18T14:32:22+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -426,17 +426,25 @@
 "dp": 1.1,
 "rem": 1.1,
 "aw": 1.2,
-"ctl": 74.3,
-"atl": 62,
-"tsb": 12.3,
-"tss": 0,
-"act": 0,
+"ctl": 75.3,
+"atl": 68,
+"tsb": 7.3,
+"tss": 45,
+"act": 541,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14,
-"wk": [],
+"wk": [
+{
+"n": "Le Castellet Hardlopen",
+"t": "40m \u00b7 8.7km \u00b7 HR Avg:149 Max:160 \u00b7 N/A Power \u00b7 541kcal \u00b7 45TSS \u00b7 HR Zones: Z1:4m, Z2:33m, Z3:4m",
+"min": 40,
+"strength": false,
+"kcal": 541
+}
+],
 "open": true
 }
 ],
