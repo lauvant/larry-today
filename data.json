@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-18T22:16:44+00:00",
+"generated": "2026-10-18T22:45:57+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,29 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-10-05",
-"d": "10-05",
-"hrv": 38,
-"rhr": 49,
-"shr": 52.125,
-"sl": 3.9,
-"dp": 0.9,
-"rem": 0.5,
-"aw": 2.5,
-"ctl": 77.8,
-"atl": 65.3,
-"tsb": 12.5,
-"tss": 0,
-"act": 0,
-"in": 1278,
-"bal": -572,
-"w": null,
-"lm": null,
-"rr": 14.6,
-"wk": [],
-"open": false
-},
 {
 "date": "2026-10-06",
 "d": "10-06",
@@ -431,8 +408,8 @@
 "tsb": 7.3,
 "tss": 45,
 "act": 541,
-"in": null,
-"bal": null,
+"in": 2542,
+"bal": 151,
 "w": null,
 "lm": null,
 "rr": 14,
@@ -446,6 +423,29 @@
 }
 ],
 "open": false
+},
+{
+"date": "2026-10-19",
+"d": "10-19",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 73.6,
+"atl": 58.9,
+"tsb": 14.7,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
+"open": true
 }
 ],
 "intake": {
