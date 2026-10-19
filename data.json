@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-19T12:11:31+00:00",
+"generated": "2026-10-19T12:47:53+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -434,10 +434,10 @@
 "dp": 1.7,
 "rem": 1.4,
 "aw": 1,
-"ctl": 73.8,
-"atl": 60.4,
-"tsb": 13.4,
-"tss": 11,
+"ctl": 74.3,
+"atl": 63.1,
+"tsb": 11.2,
+"tss": 31,
 "act": 240,
 "in": null,
 "bal": null,
@@ -458,6 +458,13 @@
 "min": 19,
 "strength": false,
 "kcal": 133
+},
+{
+"n": "Motorsport",
+"t": "40m \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 20TSS",
+"min": 40,
+"strength": false,
+"kcal": 0
 }
 ],
 "open": true
