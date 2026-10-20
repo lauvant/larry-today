@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-20T09:26:16+00:00",
+"generated": "2026-10-20T09:57:02+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -448,17 +448,25 @@
 "dp": 1.8,
 "rem": 1.7,
 "aw": 1.5,
-"ctl": 72.5,
-"atl": 54.7,
-"tsb": 17.8,
-"tss": 0,
-"act": 0,
+"ctl": 72.7,
+"atl": 55.5,
+"tsb": 17.2,
+"tss": 6,
+"act": 137,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14.5,
-"wk": [],
+"wk": [
+{
+"n": "Strength",
+"t": "44m \u00b7 0km \u00b7 HR Avg:81 Max:120 \u00b7 N/A Power \u00b7 137kcal \u00b7 6TSS \u00b7 HR Zones: Z1:44m",
+"min": 44,
+"strength": true,
+"kcal": 137
+}
+],
 "open": true
 }
 ],
