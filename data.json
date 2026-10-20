@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-20T22:07:23+00:00",
+"generated": "2026-10-20T22:35:14+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,37 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-10-07",
-"d": "10-07",
-"hrv": 61,
-"rhr": 44,
-"shr": 47.75,
-"sl": 7.3,
-"dp": 2.1,
-"rem": 1.1,
-"aw": 1.6,
-"ctl": 76.9,
-"atl": 63.9,
-"tsb": 13,
-"tss": 91,
-"act": 1574,
-"in": 3007,
-"bal": -417,
-"w": 68.4,
-"lm": 62.3,
-"rr": 14.5,
-"wk": [
-{
-"n": "Morning Ride",
-"t": "115m \u00b7 59.3km \u00b7 HR Avg:142 Max:161 \u00b7 213W NP \u00b7 1574kcal \u00b7 91TSS \u00b7 HR Zones: Z1:38m, Z2:77m \u00b7 Power Zones: Z1:9m, Z2:85m, Z3:20m, Z4:1m, Z8:1m",
-"min": 115,
-"strength": false,
-"kcal": 1574
-}
-],
-"open": false
-},
 {
 "date": "2026-10-08",
 "d": "10-08",
@@ -451,14 +420,21 @@
 "ctl": 74,
 "atl": 63,
 "tsb": 11,
-"tss": 63,
-"act": 811,
+"tss": 76,
+"act": 1080,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14.5,
 "wk": [
+{
+"n": "Motorsport",
+"t": "66m \u00b7 0km \u00b7 HR Avg:94 Max:128 \u00b7 N/A Power \u00b7 269kcal \u00b7 13TSS \u00b7 HR Zones: Z1:66m",
+"min": 66,
+"strength": false,
+"kcal": 269
+},
 {
 "n": "Hardlopen op een loopband",
 "t": "47m \u00b7 10.5km \u00b7 HR Avg:167 Max:191 \u00b7 N/A Power \u00b7 674kcal \u00b7 57TSS \u00b7 HR Zones: Z1:8m, Z2:6m, Z3:7m, Z4:19m, Z5:6m",
@@ -475,6 +451,29 @@
 }
 ],
 "open": false
+},
+{
+"date": "2026-10-21",
+"d": "10-21",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 72.6,
+"atl": 56.2,
+"tsb": 16.4,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
+"open": true
 }
 ],
 "intake": {
