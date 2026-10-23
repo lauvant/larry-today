@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-23T06:44:34+00:00",
+"generated": "2026-10-23T07:26:49+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -455,17 +455,25 @@
 "dp": 0.2,
 "rem": 1.6,
 "aw": 1.4,
-"ctl": 75.8,
-"atl": 74.6,
-"tsb": 1.2,
-"tss": 0,
-"act": 0,
+"ctl": 77.1,
+"atl": 81.9,
+"tsb": -4.8,
+"tss": 55,
+"act": 666,
 "in": null,
 "bal": null,
 "w": 67.8,
 "lm": 60.5,
 "rr": 14.5,
-"wk": [],
+"wk": [
+{
+"n": "J\u00e1vea Hardlopen",
+"t": "45m \u00b7 10.1km \u00b7 HR Avg:165 Max:181 \u00b7 N/A Power \u00b7 666kcal \u00b7 55TSS \u00b7 HR Zones: Z1:1m, Z2:6m, Z3:30m, Z4:8m",
+"min": 45,
+"strength": false,
+"kcal": 666
+}
+],
 "open": true
 }
 ],
