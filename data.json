@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-24T21:33:46+00:00",
+"generated": "2026-10-24T22:01:34+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -474,7 +474,7 @@
 "kcal": 518
 }
 ],
-"open": true
+"open": false
 }
 ],
 "intake": {
