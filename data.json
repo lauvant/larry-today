@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-28T23:21:05+00:00",
+"generated": "2026-10-29T02:33:57+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,44 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-10-15",
-"d": "10-15",
-"hrv": 51,
-"rhr": 44,
-"shr": 45.875,
-"sl": 6.9,
-"dp": 1.4,
-"rem": 1.7,
-"aw": 1.4,
-"ctl": 74,
-"atl": 56.4,
-"tsb": 17.6,
-"tss": 39,
-"act": 495,
-"in": 2913,
-"bal": 568,
-"w": null,
-"lm": null,
-"rr": 14.5,
-"wk": [
-{
-"n": "Hardlopen op een loopband",
-"t": "30m \u00b7 6.4km \u00b7 HR Avg:141 Max:154 \u00b7 N/A Power \u00b7 356kcal \u00b7 33TSS \u00b7 HR Zones: Z1:11m, Z2:18m",
-"min": 30,
-"strength": false,
-"kcal": 356
-},
-{
-"n": "Strength",
-"t": "42m \u00b7 0km \u00b7 HR Avg:81 Max:137 \u00b7 N/A Power \u00b7 139kcal \u00b7 6TSS \u00b7 HR Zones: Z1:42m",
-"min": 42,
-"strength": true,
-"kcal": 139
-}
-],
-"open": false
-},
 {
 "date": "2026-10-16",
 "d": "10-16",
@@ -497,6 +459,29 @@
 }
 ],
 "open": false
+},
+{
+"date": "2026-10-29",
+"d": "10-29",
+"hrv": 53,
+"rhr": 42,
+"shr": 50.375,
+"sl": 8.3,
+"dp": 1.6,
+"rem": 2.1,
+"aw": 2.3,
+"ctl": 70.9,
+"atl": 52,
+"tsb": 18.9,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": 15.4,
+"wk": [],
+"open": true
 }
 ],
 "intake": {
