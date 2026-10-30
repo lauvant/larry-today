@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-30T06:04:53+00:00",
+"generated": "2026-10-30T12:46:01+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -470,9 +470,9 @@
 "dp": 1.2,
 "rem": 1.3,
 "aw": 2.3,
-"ctl": 69.4,
-"atl": 46.2,
-"tsb": 23.2,
+"ctl": 71,
+"atl": 54.9,
+"tsb": 16.1,
 "tss": 0,
 "act": 0,
 "in": null,
@@ -480,7 +480,15 @@
 "w": null,
 "lm": null,
 "rr": 15,
-"wk": [],
+"wk": [
+{
+"n": "Session",
+"t": "N/Am \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 N/ATSS",
+"min": 0,
+"strength": false,
+"kcal": 0
+}
+],
 "open": true
 }
 ],
