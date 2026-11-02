@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-01T21:24:27+00:00",
+"generated": "2026-11-02T00:54:54+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,51 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-10-19",
-"d": "10-19",
-"hrv": 43,
-"rhr": 45,
-"shr": 48.5,
-"sl": 7,
-"dp": 1.7,
-"rem": 1.4,
-"aw": 1,
-"ctl": 74.3,
-"atl": 63.1,
-"tsb": 11.2,
-"tss": 31,
-"act": 300,
-"in": 1659,
-"bal": -491,
-"w": null,
-"lm": null,
-"rr": 14.8,
-"wk": [
-{
-"n": "Motorsport",
-"t": "23m \u00b7 0km \u00b7 HR Avg:95 Max:135 \u00b7 N/A Power \u00b7 107kcal \u00b7 5TSS \u00b7 HR Zones: Z1:23m",
-"min": 23,
-"strength": false,
-"kcal": 107
-},
-{
-"n": "Motorsport",
-"t": "19m \u00b7 0km \u00b7 HR Avg:113 Max:150 \u00b7 N/A Power \u00b7 133kcal \u00b7 6TSS \u00b7 HR Zones: Z1:19m",
-"min": 19,
-"strength": false,
-"kcal": 133
-},
-{
-"n": "Motorsport",
-"t": "40m \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 60kcal \u00b7 20TSS",
-"min": 40,
-"strength": false,
-"kcal": 60
-}
-],
-"open": false
-},
 {
 "date": "2026-10-20",
 "d": "10-20",
@@ -482,6 +437,29 @@
 "kcal": 0
 }
 ],
+"open": false
+},
+{
+"date": "2026-11-02",
+"d": "11-02",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 67.4,
+"atl": 41.9,
+"tsb": 25.5,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
 "open": true
 }
 ],
