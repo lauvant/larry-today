@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-02T06:56:20+00:00",
+"generated": "2026-11-02T16:40:49+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -214,8 +214,8 @@
 "ctl": 73.4,
 "atl": 61.7,
 "tsb": 11.7,
-"tss": 0,
-"act": 0,
+"tss": 32,
+"act": 620,
 "in": null,
 "bal": null,
 "w": null,
@@ -223,25 +223,18 @@
 "rr": 15.3,
 "wk": [
 {
-"n": "Session",
-"t": "N/Am \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 N/ATSS",
-"min": 0,
-"strength": false,
-"kcal": 0
+"n": "Strength",
+"t": "61m \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 260kcal \u00b7 12TSS \u00b7 manual est, no HR",
+"min": 61,
+"strength": true,
+"kcal": 260
 },
 {
-"n": "Session",
-"t": "N/Am \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 N/ATSS",
-"min": 0,
+"n": "Hotel bike ~190W",
+"t": "30m \u00b7 16.0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 360kcal \u00b7 20TSS \u00b7 manual est, no HR",
+"min": 30,
 "strength": false,
-"kcal": 0
-},
-{
-"n": "Session",
-"t": "N/Am \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 N/ATSS",
-"min": 0,
-"strength": false,
-"kcal": 0
+"kcal": 360
 }
 ],
 "open": false
@@ -259,8 +252,8 @@
 "ctl": 73.1,
 "atl": 61.5,
 "tsb": 11.6,
-"tss": 0,
-"act": 0,
+"tss": 60,
+"act": 700,
 "in": null,
 "bal": null,
 "w": null,
@@ -268,18 +261,18 @@
 "rr": 14.9,
 "wk": [
 {
-"n": "Session",
-"t": "N/Am \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 N/ATSS",
-"min": 0,
-"strength": false,
-"kcal": 0
+"n": "Strength",
+"t": "37m \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 110kcal \u00b7 5TSS \u00b7 manual est, no HR",
+"min": 37,
+"strength": true,
+"kcal": 110
 },
 {
-"n": "Session",
-"t": "N/Am \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 N/ATSS",
-"min": 0,
+"n": "VO2 5x3min treadmill",
+"t": "40m \u00b7 9.1km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 590kcal \u00b7 55TSS \u00b7 manual est, no HR",
+"min": 40,
 "strength": false,
-"kcal": 0
+"kcal": 590
 }
 ],
 "open": false
@@ -297,8 +290,8 @@
 "ctl": 72.6,
 "atl": 59.9,
 "tsb": 12.7,
-"tss": 0,
-"act": 0,
+"tss": 50,
+"act": 660,
 "in": null,
 "bal": null,
 "w": null,
@@ -306,11 +299,11 @@
 "rr": 14.6,
 "wk": [
 {
-"n": "Session",
-"t": "N/Am \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 N/ATSS",
-"min": 0,
+"n": "Easy run",
+"t": "50m \u00b7 10.2km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 660kcal \u00b7 50TSS \u00b7 manual est, no HR",
+"min": 50,
 "strength": false,
-"kcal": 0
+"kcal": 660
 }
 ],
 "open": false
@@ -328,8 +321,8 @@
 "ctl": 71.1,
 "atl": 53.3,
 "tsb": 17.8,
-"tss": 0,
-"act": 0,
+"tss": 10,
+"act": 200,
 "in": null,
 "bal": null,
 "w": null,
@@ -337,11 +330,11 @@
 "rr": 15.3,
 "wk": [
 {
-"n": "Session",
-"t": "N/Am \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 N/ATSS",
-"min": 0,
-"strength": false,
-"kcal": 0
+"n": "Strength",
+"t": "60m \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 200kcal \u00b7 10TSS \u00b7 manual est, no HR",
+"min": 60,
+"strength": true,
+"kcal": 200
 }
 ],
 "open": false
@@ -359,8 +352,8 @@
 "ctl": 71,
 "atl": 54.9,
 "tsb": 16.1,
-"tss": 0,
-"act": 0,
+"tss": 64,
+"act": 760,
 "in": null,
 "bal": null,
 "w": null,
@@ -368,11 +361,11 @@
 "rr": 15,
 "wk": [
 {
-"n": "Session",
-"t": "N/Am \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 N/ATSS",
-"min": 0,
+"n": "Threshold 3x8min treadmill",
+"t": "53m \u00b7 12.0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 760kcal \u00b7 64TSS \u00b7 manual est, no HR",
+"min": 53,
 "strength": false,
-"kcal": 0
+"kcal": 760
 }
 ],
 "open": false
@@ -390,8 +383,8 @@
 "ctl": 70.5,
 "atl": 54.2,
 "tsb": 16.3,
-"tss": 0,
-"act": 0,
+"tss": 50,
+"act": 660,
 "in": null,
 "bal": null,
 "w": null,
@@ -399,11 +392,11 @@
 "rr": 14.8,
 "wk": [
 {
-"n": "Session",
-"t": "N/Am \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 N/ATSS",
-"min": 0,
+"n": "Easy run",
+"t": "50m \u00b7 10.2km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 660kcal \u00b7 50TSS \u00b7 manual est, no HR",
+"min": 50,
 "strength": false,
-"kcal": 0
+"kcal": 660
 }
 ],
 "open": false
@@ -421,8 +414,8 @@
 "ctl": 69,
 "atl": 48.3,
 "tsb": 20.7,
-"tss": 0,
-"act": 0,
+"tss": 10,
+"act": 170,
 "in": null,
 "bal": null,
 "w": null,
@@ -430,11 +423,11 @@
 "rr": 15,
 "wk": [
 {
-"n": "Session",
-"t": "N/Am \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 N/ATSS",
-"min": 0,
-"strength": false,
-"kcal": 0
+"n": "Strength",
+"t": "50m \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 170kcal \u00b7 10TSS \u00b7 manual est, no HR",
+"min": 50,
+"strength": true,
+"kcal": 170
 }
 ],
 "open": false
