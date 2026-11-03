@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-03T18:42:57+00:00",
+"generated": "2026-11-03T23:41:21+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,37 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-10-21",
-"d": "10-21",
-"hrv": 73,
-"rhr": 42,
-"shr": 45.625,
-"sl": 4.8,
-"dp": 1.4,
-"rem": 0.6,
-"aw": 0.9,
-"ctl": 73.7,
-"atl": 62.7,
-"tsb": 11,
-"tss": 49,
-"act": 595,
-"in": 2471,
-"bal": 26,
-"w": null,
-"lm": null,
-"rr": 14.3,
-"wk": [
-{
-"n": "Le Castellet Motorsport",
-"t": "113m \u00b7 0km \u00b7 HR Avg:106 Max:131 \u00b7 N/A Power \u00b7 595kcal \u00b7 49TSS \u00b7 HR Zones: Z1:110m, Z2:3m",
-"min": 113,
-"strength": false,
-"kcal": 595
-}
-],
-"open": false
-},
 {
 "date": "2026-10-22",
 "d": "10-22",
@@ -430,6 +399,29 @@
 "w": null,
 "lm": null,
 "rr": 14.4,
+"wk": [],
+"open": false
+},
+{
+"date": "2026-11-04",
+"d": "11-04",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 64.3,
+"atl": 31.5,
+"tsb": 32.8,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
 "wk": [],
 "open": true
 }
