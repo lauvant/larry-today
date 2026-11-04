@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-04T10:53:45+00:00",
+"generated": "2026-11-04T18:16:22+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -412,21 +412,43 @@
 "dp": 1.6,
 "rem": 1.4,
 "aw": 1.2,
-"ctl": 64.3,
-"atl": 31.5,
-"tsb": 32.8,
-"tss": 0,
-"act": 0,
+"ctl": 66.1,
+"atl": 42,
+"tsb": 24.1,
+"tss": 79,
+"act": 1229,
 "in": null,
 "bal": null,
 "w": 68.9,
 "lm": 61.1,
 "rr": 14.5,
-"wk": [],
+"wk": [
+{
+"n": "Zwift - Flat Route in Watopia",
+"t": "91m \u00b7 54.8km \u00b7 HR Avg:140 Max:151 \u00b7 205W NP \u00b7 1048kcal \u00b7 71TSS \u00b7 HR Zones: Z1:29m, Z2:61m \u00b7 Power Zones: Z1:25m, Z2:65m",
+"min": 91,
+"strength": false,
+"kcal": 1048
+},
+{
+"n": "Strength",
+"t": "64m \u00b7 0km \u00b7 HR Avg:77 Max:125 \u00b7 N/A Power \u00b7 181kcal \u00b7 8TSS \u00b7 HR Zones: Z1:64m",
+"min": 64,
+"strength": true,
+"kcal": 181
+}
+],
 "open": true
 }
 ],
 "intake": {
+"2026-11-04": {
+"kcal": 1757,
+"carbs": 260.6,
+"protein": 67.2,
+"fat": 44.5,
+"updated": "2026-11-04T13:34:00.000Z"
+},
 "2026-10-23": {
 "kcal": 2254,
 "carbs": 318.5,
@@ -440,13 +462,6 @@
 "protein": 134.9,
 "fat": 136.1,
 "updated": "2026-10-22T19:56:00.000Z"
-},
-"2026-10-21": {
-"kcal": 2471,
-"carbs": 368.2,
-"protein": 118.7,
-"fat": 55.6,
-"updated": "2026-10-21T19:54:00.000Z"
 }
 }
 }
