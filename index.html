@@ -117,8 +117,16 @@ svg{display:block;width:100%;height:auto}
 </main>
 
 <script>
-// Loads data.json written hourly by the GitHub Action (scripts/build_data.py).
-function load(){const b=document.getElementById("refresh");b.textContent="…";b.disabled=true;fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(d=>{render(d);b.textContent="UPDATED "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"});setTimeout(()=>{b.textContent="REFRESH";b.disabled=false;},2500);}).catch(e=>{document.getElementById("sub").textContent="data.json not found — the Action has not run yet.";b.textContent="REFRESH";b.disabled=false;});}
+// Shows data.json (GitHub Action) instantly, then swaps in live numbers from the Apps Script feed (4 Nov 2026).
+const LIVE="https://script.google.com/macros/s/AKfycbxUEL7OtHPp1vHnlbFWKNRR2EZxoAELfIQHY7MsU4lLC9sBlk5ZJExg5O2vBYqeHtmH/exec?format=json";
+let shown="";
+function show(d){if(d&&d.generated&&d.generated>=shown){shown=d.generated;render(d);}}
+function load(){const b=document.getElementById("refresh");b.textContent="…";b.disabled=true;
+const get=u=>fetch(u,{cache:"no-store"}).then(r=>r.json());
+const local=get("data.json?t="+Date.now()).then(show).catch(()=>{});
+get(LIVE).then(show).then(()=>{b.textContent="UPDATED "+new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"});})
+.catch(()=>local.then(()=>{b.textContent=shown?"OFFLINE COPY":"REFRESH";}))
+.finally(()=>setTimeout(()=>{b.textContent="REFRESH";b.disabled=false;},2500));}
 load();document.getElementById("refresh").addEventListener("click",load);
 function render(DATA){
 const $=id=>document.getElementById(id);
