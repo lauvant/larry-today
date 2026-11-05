@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-05T03:52:27+00:00",
+"generated": "2026-11-05T11:40:14+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -386,8 +386,8 @@
 "tsb": 24.1,
 "tss": 79,
 "act": 1229,
-"in": 2962,
-"bal": -117,
+"in": 3002,
+"bal": -77,
 "w": 68.9,
 "lm": 61.1,
 "rr": 14.5,
@@ -412,34 +412,56 @@
 {
 "date": "2026-11-05",
 "d": "11-05",
-"hrv": null,
-"rhr": null,
-"shr": null,
-"sl": null,
-"dp": null,
-"rem": null,
-"aw": null,
-"ctl": 64.6,
-"atl": 36.4,
-"tsb": 28.2,
-"tss": 0,
-"act": 0,
+"hrv": 68,
+"rhr": 44,
+"shr": 48.25,
+"sl": 6.8,
+"dp": 1.5,
+"rem": 1.4,
+"aw": 1.5,
+"ctl": 64.8,
+"atl": 37.5,
+"tsb": 27.3,
+"tss": 4,
+"act": 110,
 "in": null,
 "bal": null,
-"w": null,
-"lm": null,
-"rr": null,
-"wk": [],
+"w": 69.2,
+"lm": 61.8,
+"rr": 14.4,
+"wk": [
+{
+"n": "Strength",
+"t": "53m \u00b7 0km \u00b7 HR Avg:70 Max:123 \u00b7 N/A Power \u00b7 110kcal \u00b7 4TSS \u00b7 HR Zones: Z1:53m",
+"min": 53,
+"strength": true,
+"kcal": 110
+},
+{
+"n": "Session",
+"t": "N/Am \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 N/Akcal \u00b7 N/ATSS",
+"min": 0,
+"strength": false,
+"kcal": 0
+}
+],
 "open": true
 }
 ],
 "intake": {
+"2026-11-05": {
+"kcal": 683,
+"carbs": 97.9,
+"protein": 26.6,
+"fat": 19.2,
+"updated": "2026-11-05T07:56:00.000Z"
+},
 "2026-11-04": {
-"kcal": 2962,
-"carbs": 402.6,
-"protein": 127.7,
-"fat": 86.5,
-"updated": "2026-11-04T20:48:00.000Z"
+"kcal": 3002,
+"carbs": 405.6,
+"protein": 129.7,
+"fat": 88.7,
+"updated": "2026-11-05T07:32:00.000Z"
 },
 "2026-10-23": {
 "kcal": 2254,
@@ -447,13 +469,6 @@
 "protein": 81.5,
 "fat": 71.9,
 "updated": "2026-10-23T21:58:00.000Z"
-},
-"2026-10-22": {
-"kcal": 5220,
-"carbs": 824.1,
-"protein": 134.9,
-"fat": 136.1,
-"updated": "2026-10-22T19:56:00.000Z"
 }
 }
 }
