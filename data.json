@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-05T18:57:20+00:00",
+"generated": "2026-11-06T03:50:09+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,37 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-10-23",
-"d": "10-23",
-"hrv": 71,
-"rhr": 47,
-"shr": 52.75,
-"sl": 6.7,
-"dp": 0.2,
-"rem": 1.6,
-"aw": 1.4,
-"ctl": 77.1,
-"atl": 81.9,
-"tsb": -4.8,
-"tss": 55,
-"act": 666,
-"in": 2254,
-"bal": -262,
-"w": 67.8,
-"lm": 60.5,
-"rr": 14.5,
-"wk": [
-{
-"n": "J\u00e1vea Hardlopen",
-"t": "45m \u00b7 10.1km \u00b7 HR Avg:165 Max:181 \u00b7 N/A Power \u00b7 666kcal \u00b7 55TSS \u00b7 HR Zones: Z1:1m, Z2:6m, Z3:30m, Z4:8m",
-"min": 45,
-"strength": false,
-"kcal": 666
-}
-],
-"open": false
-},
 {
 "date": "2026-10-24",
 "d": "10-24",
@@ -424,8 +393,8 @@
 "tsb": 15.9,
 "tss": 108,
 "act": 1846,
-"in": null,
-"bal": null,
+"in": 3491,
+"bal": -205,
 "w": 69.2,
 "lm": 61.8,
 "rr": 14.4,
@@ -452,16 +421,39 @@
 "kcal": 0
 }
 ],
+"open": false
+},
+{
+"date": "2026-11-06",
+"d": "11-06",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 65.6,
+"atl": 44.5,
+"tsb": 21.1,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
 "open": true
 }
 ],
 "intake": {
 "2026-11-05": {
-"kcal": 3275,
-"carbs": 479.2,
-"protein": 107,
-"fat": 97.9,
-"updated": "2026-11-05T18:47:00.000Z"
+"kcal": 3491,
+"carbs": 502.2,
+"protein": 115.3,
+"fat": 106.8,
+"updated": "2026-11-05T20:29:00.000Z"
 },
 "2026-11-04": {
 "kcal": 3002,
