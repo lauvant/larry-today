@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-09T10:29:06+00:00",
+"generated": "2026-11-09T20:56:11+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -441,17 +441,24 @@
 "dp": 0.3,
 "rem": 1.5,
 "aw": 1.4,
-"ctl": 70.7,
-"atl": 74.1,
-"tsb": -3.4,
-"tss": 67,
-"act": 834,
+"ctl": 70.8,
+"atl": 75.1,
+"tsb": -4.3,
+"tss": 74,
+"act": 994,
 "in": null,
 "bal": null,
 "w": 69.9,
 "lm": 62.8,
 "rr": 14.5,
 "wk": [
+{
+"n": "Strength",
+"t": "42m \u00b7 0km \u00b7 HR Avg:86 Max:137 \u00b7 N/A Power \u00b7 160kcal \u00b7 7TSS \u00b7 HR Zones: Z1:42m",
+"min": 42,
+"strength": true,
+"kcal": 160
+},
 {
 "n": "J\u00e1vea Hardlopen",
 "t": "63m \u00b7 13.2km \u00b7 HR Avg:150 Max:161 \u00b7 N/A Power \u00b7 834kcal \u00b7 67TSS \u00b7 HR Zones: Z1:1m, Z2:60m, Z3:2m",
@@ -465,11 +472,11 @@
 ],
 "intake": {
 "2026-11-09": {
-"kcal": 1176,
-"carbs": 165.7,
-"protein": 33.2,
-"fat": 42.7,
-"updated": "2026-11-09T10:11:00.000Z"
+"kcal": 3610,
+"carbs": 499.6,
+"protein": 112.9,
+"fat": 128.8,
+"updated": "2026-11-09T20:46:00.000Z"
 },
 "2026-11-08": {
 "kcal": 3317,
