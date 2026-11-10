@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-10T18:39:05+00:00",
+"generated": "2026-11-10T23:42:28+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,37 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-10-28",
-"d": "10-28",
-"hrv": 60,
-"rhr": 43,
-"shr": 48.25,
-"sl": 8,
-"dp": 1.1,
-"rem": 2,
-"aw": 3.1,
-"ctl": 72.6,
-"atl": 59.9,
-"tsb": 12.7,
-"tss": 50,
-"act": 660,
-"in": null,
-"bal": null,
-"w": null,
-"lm": null,
-"rr": 14.6,
-"wk": [
-{
-"n": "Easy run",
-"t": "50m \u00b7 10.2km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 660kcal \u00b7 50TSS \u00b7 manual est, no HR",
-"min": 50,
-"strength": false,
-"kcal": 660
-}
-],
-"open": false
-},
 {
 "date": "2026-10-29",
 "d": "10-29",
@@ -446,8 +415,8 @@
 "tsb": -16.8,
 "tss": 190,
 "act": 2525,
-"in": null,
-"bal": null,
+"in": 3905,
+"bal": -470,
 "w": null,
 "lm": null,
 "rr": 15.5,
@@ -460,16 +429,39 @@
 "kcal": 2525
 }
 ],
+"open": false
+},
+{
+"date": "2026-11-11",
+"d": "11-11",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 71.9,
+"atl": 78.3,
+"tsb": -6.4,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
 "open": true
 }
 ],
 "intake": {
 "2026-11-10": {
-"kcal": 3574,
-"carbs": 568.1,
-"protein": 103.6,
-"fat": 95,
-"updated": "2026-11-10T17:58:00.000Z"
+"kcal": 3905,
+"carbs": 620.5,
+"protein": 115.3,
+"fat": 102.5,
+"updated": "2026-11-10T21:08:00.000Z"
 },
 "2026-11-09": {
 "kcal": 3610,
