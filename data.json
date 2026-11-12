@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-12T13:13:48+00:00",
+"generated": "2026-11-12T20:49:07+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -448,11 +448,11 @@
 "dp": 0.5,
 "rem": 2,
 "aw": 1.2,
-"ctl": 76.7,
-"atl": 102.8,
-"tsb": -26.1,
-"tss": 137,
-"act": 1773,
+"ctl": 77.4,
+"atl": 106.2,
+"tsb": -28.8,
+"tss": 163,
+"act": 2278,
 "in": null,
 "bal": null,
 "w": null,
@@ -461,10 +461,10 @@
 "wk": [
 {
 "n": "Driving Range",
-"t": "0m \u00b7 0km \u00b7 HR Avg:N/A Max:N/A \u00b7 N/A Power \u00b7 0kcal \u00b7 N/ATSS",
-"min": 0,
+"t": "94m \u00b7 0km \u00b7 HR Avg:106 Max:124 \u00b7 N/A Power \u00b7 505kcal \u00b7 26TSS \u00b7 HR Zones: Z1:94m",
+"min": 94,
 "strength": false,
-"kcal": 0
+"kcal": 505
 },
 {
 "n": "Morning Ride",
@@ -479,11 +479,11 @@
 ],
 "intake": {
 "2026-11-12": {
-"kcal": 2063,
-"carbs": 337.8,
-"protein": 69.4,
-"fat": 47.3,
-"updated": "2026-11-12T12:05:00.000Z"
+"kcal": 3744,
+"carbs": 493,
+"protein": 142.2,
+"fat": 122,
+"updated": "2026-11-12T20:14:00.000Z"
 },
 "2026-11-11": {
 "kcal": 3821,
