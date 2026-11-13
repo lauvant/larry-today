@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-13T01:32:54+00:00",
+"generated": "2026-11-13T08:44:18+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -386,8 +386,8 @@
 "act": 2343,
 "in": 3821,
 "bal": -372,
-"w": null,
-"lm": null,
+"w": 69.7,
+"lm": 61.7,
 "rr": 14.8,
 "wk": [
 {
@@ -424,8 +424,8 @@
 "act": 2278,
 "in": 3744,
 "bal": -384,
-"w": null,
-"lm": null,
+"w": 70.3,
+"lm": 62.6,
 "rr": 14.8,
 "wk": [
 {
@@ -448,24 +448,32 @@
 {
 "date": "2026-11-13",
 "d": "11-13",
-"hrv": 63,
-"rhr": 56,
-"shr": 59.25,
-"sl": 2.3,
-"dp": 0.3,
-"rem": 0.6,
-"aw": 1.2,
-"ctl": 75.5,
-"atl": 92.1,
-"tsb": -16.6,
-"tss": 0,
-"act": 0,
+"hrv": 58,
+"rhr": 48,
+"shr": 52.875,
+"sl": 7,
+"dp": 1.2,
+"rem": 1.9,
+"aw": 1.4,
+"ctl": 75.7,
+"atl": 92.8,
+"tsb": -17.1,
+"tss": 5,
+"act": 117,
 "in": null,
 "bal": null,
-"w": null,
-"lm": null,
-"rr": 16,
-"wk": [],
+"w": 71.2,
+"lm": 63.1,
+"rr": 14.8,
+"wk": [
+{
+"n": "Driving Range",
+"t": "22m \u00b7 0km \u00b7 HR Avg:98 Max:113 \u00b7 N/A Power \u00b7 117kcal \u00b7 5TSS \u00b7 HR Zones: Z1:22m",
+"min": 22,
+"strength": false,
+"kcal": 117
+}
+],
 "open": true
 }
 ],
