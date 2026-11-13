@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-13T08:44:18+00:00",
+"generated": "2026-11-13T16:44:12+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -383,19 +383,19 @@
 "atl": 97.5,
 "tsb": -22.2,
 "tss": 144,
-"act": 2343,
+"act": 2274,
 "in": 3821,
-"bal": -372,
+"bal": -303,
 "w": 69.7,
 "lm": 61.7,
 "rr": 14.8,
 "wk": [
 {
-"n": "Strength",
-"t": "54m \u00b7 0km \u00b7 HR Avg:86 Max:133 \u00b7 N/A Power \u00b7 195kcal \u00b7 8TSS \u00b7 HR Zones: Z1:54m",
+"n": "Strength - net kcal",
+"t": "54m \u00b7 0km \u00b7 HR Avg:86 Max:133 \u00b7 N/A Power \u00b7 126kcal \u00b7 8TSS \u00b7 HR Zones: Z1:54m",
 "min": 54,
 "strength": true,
-"kcal": 195
+"kcal": 126
 },
 {
 "n": "Morning Ride",
@@ -421,19 +421,19 @@
 "atl": 106.2,
 "tsb": -28.8,
 "tss": 163,
-"act": 2278,
+"act": 2157,
 "in": 3744,
-"bal": -384,
+"bal": -263,
 "w": 70.3,
 "lm": 62.6,
 "rr": 14.8,
 "wk": [
 {
-"n": "Driving Range",
-"t": "94m \u00b7 0km \u00b7 HR Avg:106 Max:124 \u00b7 N/A Power \u00b7 505kcal \u00b7 26TSS \u00b7 HR Zones: Z1:94m",
+"n": "Driving Range - net kcal",
+"t": "94m \u00b7 0km \u00b7 HR Avg:106 Max:124 \u00b7 N/A Power \u00b7 384kcal \u00b7 26TSS \u00b7 HR Zones: Z1:94m",
 "min": 94,
 "strength": false,
-"kcal": 505
+"kcal": 384
 },
 {
 "n": "Morning Ride",
@@ -455,11 +455,11 @@
 "dp": 1.2,
 "rem": 1.9,
 "aw": 1.4,
-"ctl": 75.7,
-"atl": 92.8,
-"tsb": -17.1,
-"tss": 5,
-"act": 117,
+"ctl": 76.5,
+"atl": 97.3,
+"tsb": -20.8,
+"tss": 39,
+"act": 667,
 "in": null,
 "bal": null,
 "w": 71.2,
@@ -467,17 +467,52 @@
 "rr": 14.8,
 "wk": [
 {
-"n": "Driving Range",
-"t": "22m \u00b7 0km \u00b7 HR Avg:98 Max:113 \u00b7 N/A Power \u00b7 117kcal \u00b7 5TSS \u00b7 HR Zones: Z1:22m",
+"n": "Driving Range - net kcal",
+"t": "25m \u00b7 0km \u00b7 HR Avg:93 Max:108 \u00b7 N/A Power \u00b7 83kcal \u00b7 4TSS \u00b7 HR Zones: Z1:25m",
+"min": 25,
+"strength": false,
+"kcal": 83
+},
+{
+"n": "Strength - net kcal",
+"t": "52m \u00b7 0km \u00b7 HR Avg:76 Max:120 \u00b7 N/A Power \u00b7 79kcal \u00b7 5TSS \u00b7 HR Zones: Z1:52m",
+"min": 52,
+"strength": true,
+"kcal": 79
+},
+{
+"n": "Driving Range - net kcal",
+"t": "21m \u00b7 0km \u00b7 HR Avg:94 Max:106 \u00b7 N/A Power \u00b7 75kcal \u00b7 4TSS \u00b7 HR Zones: Z1:21m",
+"min": 21,
+"strength": false,
+"kcal": 75
+},
+{
+"n": "J\u00e1vea Golf - net kcal",
+"t": "69m \u00b7 4.6km \u00b7 HR Avg:94 Max:128 \u00b7 N/A Power \u00b7 341kcal \u00b7 21TSS \u00b7 HR Zones: Z1:112m",
+"min": 69,
+"strength": false,
+"kcal": 341
+},
+{
+"n": "Driving Range - net kcal",
+"t": "22m \u00b7 0km \u00b7 HR Avg:98 Max:113 \u00b7 N/A Power \u00b7 89kcal \u00b7 5TSS \u00b7 HR Zones: Z1:22m",
 "min": 22,
 "strength": false,
-"kcal": 117
+"kcal": 89
 }
 ],
 "open": true
 }
 ],
 "intake": {
+"2026-11-13": {
+"kcal": 641,
+"carbs": 87.7,
+"protein": 21.6,
+"fat": 20.9,
+"updated": "2026-11-13T12:45:00.000Z"
+},
 "2026-11-12": {
 "kcal": 3744,
 "carbs": 493,
@@ -491,13 +526,6 @@
 "protein": 151,
 "fat": 97.5,
 "updated": "2026-11-11T21:52:00.000Z"
-},
-"2026-11-10": {
-"kcal": 3905,
-"carbs": 620.5,
-"protein": 115.3,
-"fat": 102.5,
-"updated": "2026-11-10T21:08:00.000Z"
 }
 }
 }
