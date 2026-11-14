@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-14T09:08:08+00:00",
+"generated": "2026-11-14T15:45:15+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -429,8 +429,8 @@
 "tsb": -20.8,
 "tss": 39,
 "act": 667,
-"in": null,
-"bal": null,
+"in": 1860,
+"bal": -657,
 "w": 71.2,
 "lm": 63.1,
 "rr": 14.8,
@@ -483,21 +483,36 @@
 "dp": 0.9,
 "rem": 1.4,
 "aw": 1.2,
-"ctl": 74.7,
-"atl": 84.3,
-"tsb": -9.6,
-"tss": 0,
-"act": 0,
+"ctl": 75.8,
+"atl": 90.6,
+"tsb": -14.8,
+"tss": 47,
+"act": 603,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 13.9,
-"wk": [],
+"wk": [
+{
+"n": "City of Westminster Hardlopen",
+"t": "45m \u00b7 9.3km \u00b7 HR Avg:149 Max:160 \u00b7 N/A Power \u00b7 603kcal \u00b7 47TSS \u00b7 HR Zones: Z1:4m, Z2:35m, Z3:6m",
+"min": 45,
+"strength": false,
+"kcal": 603
+}
+],
 "open": true
 }
 ],
 "intake": {
+"2026-11-14": {
+"kcal": 477,
+"carbs": 66.9,
+"protein": 13.1,
+"fat": 15.5,
+"updated": "2026-11-14T10:03:00.000Z"
+},
 "2026-11-13": {
 "kcal": 1860,
 "carbs": 238.6,
@@ -511,13 +526,6 @@
 "protein": 142.2,
 "fat": 122,
 "updated": "2026-11-12T20:14:00.000Z"
-},
-"2026-11-11": {
-"kcal": 3821,
-"carbs": 552.5,
-"protein": 151,
-"fat": 97.5,
-"updated": "2026-11-11T21:52:00.000Z"
 }
 }
 }
