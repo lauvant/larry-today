@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-15T03:21:33+00:00",
+"generated": "2026-11-15T11:16:37+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -457,8 +457,8 @@
 "tsb": -14.8,
 "tss": 47,
 "act": 603,
-"in": null,
-"bal": null,
+"in": 1629,
+"bal": -824,
 "w": null,
 "lm": null,
 "rr": 13.9,
@@ -476,34 +476,49 @@
 {
 "date": "2026-11-15",
 "d": "11-15",
-"hrv": 62,
-"rhr": 48,
-"shr": 52.25,
-"sl": 2.9,
-"dp": 0.1,
-"rem": 0.1,
-"aw": 1.7,
-"ctl": 74,
-"atl": 78.5,
-"tsb": -4.5,
-"tss": 0,
-"act": 0,
+"hrv": 70,
+"rhr": 45,
+"shr": 48.375,
+"sl": 8,
+"dp": 1.1,
+"rem": 1.6,
+"aw": 1.8,
+"ctl": 75.2,
+"atl": 85.2,
+"tsb": -10,
+"tss": 50,
+"act": 663,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
-"rr": 15.4,
-"wk": [],
+"rr": 13.9,
+"wk": [
+{
+"n": "Woking Hardlopen",
+"t": "48m \u00b7 10.0km \u00b7 HR Avg:156 Max:174 \u00b7 N/A Power \u00b7 663kcal \u00b7 50TSS \u00b7 HR Zones: Z1:2m, Z2:27m, Z3:18m, Z4:1m",
+"min": 48,
+"strength": false,
+"kcal": 663
+}
+],
 "open": true
 }
 ],
 "intake": {
+"2026-11-15": {
+"kcal": 806,
+"carbs": 118,
+"protein": 23.5,
+"fat": 25.6,
+"updated": "2026-11-15T09:46:00.000Z"
+},
 "2026-11-14": {
 "kcal": 1629,
 "carbs": 212.8,
 "protein": 75.1,
 "fat": 39,
-"updated": "2026-11-14T19:08:00.000Z"
+"updated": "2026-11-15T07:37:00.000Z"
 },
 "2026-11-13": {
 "kcal": 1860,
@@ -511,13 +526,6 @@
 "protein": 84.8,
 "fat": 58.6,
 "updated": "2026-11-13T23:44:00.000Z"
-},
-"2026-11-12": {
-"kcal": 3744,
-"carbs": 493,
-"protein": 142.2,
-"fat": 122,
-"updated": "2026-11-12T20:14:00.000Z"
 }
 }
 }
