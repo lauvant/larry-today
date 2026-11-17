@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-17T02:16:44+00:00",
+"generated": "2026-11-17T10:52:38+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -491,13 +491,13 @@
 {
 "date": "2026-11-17",
 "d": "11-17",
-"hrv": null,
-"rhr": null,
-"shr": null,
-"sl": null,
-"dp": null,
-"rem": null,
-"aw": null,
+"hrv": 57,
+"rhr": 43,
+"shr": 46.75,
+"sl": 6.4,
+"dp": 1.7,
+"rem": 1.5,
+"aw": 1.1,
 "ctl": 71.9,
 "atl": 64.9,
 "tsb": 7,
@@ -507,12 +507,19 @@
 "bal": null,
 "w": null,
 "lm": null,
-"rr": null,
+"rr": 14.1,
 "wk": [],
 "open": true
 }
 ],
 "intake": {
+"2026-11-17": {
+"kcal": 700,
+"carbs": 122.9,
+"protein": 19.7,
+"fat": 15.1,
+"updated": "2026-11-17T07:27:00.000Z"
+},
 "2026-11-16": {
 "kcal": 1866,
 "carbs": 241.1,
@@ -526,13 +533,6 @@
 "protein": 168.5,
 "fat": 88.3,
 "updated": "2026-11-15T20:29:00.000Z"
-},
-"2026-11-14": {
-"kcal": 1629,
-"carbs": 212.8,
-"protein": 75.1,
-"fat": 39,
-"updated": "2026-11-15T07:37:00.000Z"
 }
 }
 }
