@@ -6,7 +6,7 @@ import json, os, re, datetime as dt, urllib.request, urllib.error
 TOKEN = os.environ["NOTION_TOKEN"]
 LOG_DS = "c84963b3-643a-4564-92b8-08f38a5af163"      # Athlete Log (daily)
 INTAKE_DS = "a806b326-5146-40bd-98d1-0ca6bf8159dd"   # Daily intake
-RULES = {"baseline": 1850, "proteinTrain": 120, "proteinRest": 100, "fatPct": 0.20, "eaTarget": 28, "sleepNeed": 8.0}
+RULES = {"baseline": 1870, "proteinTrain": 120, "proteinRest": 120, "fatPct": 0.20, "fatFloor": 55, "eaTarget": 28, "sleepNeed": 8.0}
 H = {"Authorization": f"Bearer {TOKEN}", "Notion-Version": "2025-09-03", "Content-Type": "application/json"}
 
 def _post(url, body, version):
