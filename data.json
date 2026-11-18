@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-17T19:27:02+00:00",
+"generated": "2026-11-18T01:43:57+00:00",
 "rules": {
 "baseline": 1850,
 "proteinTrain": 120,
@@ -9,44 +9,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-11-04",
-"d": "11-04",
-"hrv": 56,
-"rhr": 44,
-"shr": 47.25,
-"sl": 7.3,
-"dp": 1.6,
-"rem": 1.4,
-"aw": 1.2,
-"ctl": 66.1,
-"atl": 42,
-"tsb": 24.1,
-"tss": 79,
-"act": 1229,
-"in": 3002,
-"bal": -77,
-"w": 68.9,
-"lm": 61.1,
-"rr": 14.5,
-"wk": [
-{
-"n": "Zwift - Flat Route in Watopia",
-"t": "91m \u00b7 54.8km \u00b7 HR Avg:140 Max:151 \u00b7 205W NP \u00b7 1048kcal \u00b7 71TSS \u00b7 HR Zones: Z1:29m, Z2:61m \u00b7 Power Zones: Z1:25m, Z2:65m",
-"min": 91,
-"strength": false,
-"kcal": 1048
-},
-{
-"n": "Strength",
-"t": "64m \u00b7 0km \u00b7 HR Avg:77 Max:125 \u00b7 N/A Power \u00b7 181kcal \u00b7 8TSS \u00b7 HR Zones: Z1:64m",
-"min": 64,
-"strength": true,
-"kcal": 181
-}
-],
-"open": false
-},
 {
 "date": "2026-11-05",
 "d": "11-05",
@@ -524,6 +486,29 @@
 "kcal": 1779
 }
 ],
+"open": false
+},
+{
+"date": "2026-11-18",
+"d": "11-18",
+"hrv": 60,
+"rhr": 48,
+"shr": 55.125,
+"sl": 2.9,
+"dp": 0.8,
+"rem": 0.5,
+"aw": 1,
+"ctl": 72.8,
+"atl": 69.7,
+"tsb": 3.1,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": 15.4,
+"wk": [],
 "open": true
 }
 ],
