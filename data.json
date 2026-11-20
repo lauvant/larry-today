@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-20T10:29:29+00:00",
+"generated": "2026-11-20T18:43:00+00:00",
 "rules": {
 "baseline": 1870,
 "proteinTrain": 120,
@@ -492,27 +492,49 @@
 "dp": 1.6,
 "rem": 1.2,
 "aw": 1.1,
-"ctl": 75.9,
-"atl": 81.9,
-"tsb": -6,
-"tss": 0,
-"act": 0,
+"ctl": 79.2,
+"atl": 100.7,
+"tsb": -21.5,
+"tss": 141,
+"act": 1934,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14.6,
-"wk": [],
+"wk": [
+{
+"n": "J\u00e1vea Golf - net kcal",
+"t": "21m \u00b7 1.3km \u00b7 HR Avg:113 Max:127 \u00b7 N/A Power \u00b7 194kcal \u00b7 12TSS \u00b7 HR Zones: Z1:35m",
+"min": 21,
+"strength": false,
+"kcal": 194
+},
+{
+"n": "Driving Range - net kcal",
+"t": "10m \u00b7 0km \u00b7 HR Avg:115 Max:124 \u00b7 N/A Power \u00b7 65kcal \u00b7 3TSS \u00b7 HR Zones: Z1:10m",
+"min": 10,
+"strength": false,
+"kcal": 65
+},
+{
+"n": "Morning Ride",
+"t": "127m \u00b7 65.2km \u00b7 HR Avg:147 Max:189 \u00b7 231W NP \u00b7 1675kcal \u00b7 126TSS \u00b7 HR Zones: Z1:37m, Z2:69m, Z3:7m, Z4:8m, Z5:6m \u00b7 Power Zones: Z1:37m, Z2:55m, Z3:19m, Z4:6m, Z5:5m, Z6:5m, Z7:15m",
+"min": 127,
+"strength": false,
+"kcal": 1675
+}
+],
 "open": true
 }
 ],
 "intake": {
 "2026-11-20": {
-"kcal": 846,
-"carbs": 136.6,
-"protein": 26.1,
-"fat": 20.7,
-"updated": "2026-11-20T10:16:00.000Z"
+"kcal": 3153,
+"carbs": 549,
+"protein": 110.3,
+"fat": 53.8,
+"updated": "2026-11-20T17:49:00.000Z"
 },
 "2026-11-19": {
 "kcal": 2737,
