@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-21T00:15:12+00:00",
+"generated": "2026-11-21T07:27:39+00:00",
 "rules": {
 "baseline": 1870,
 "proteinTrain": 120,
@@ -468,8 +468,8 @@
 "act": 1934,
 "in": 3373,
 "bal": -411,
-"w": null,
-"lm": null,
+"w": 70.6,
+"lm": 63,
 "rr": 14.6,
 "wk": [
 {
@@ -499,13 +499,13 @@
 {
 "date": "2026-11-21",
 "d": "11-21",
-"hrv": null,
-"rhr": null,
-"shr": null,
-"sl": null,
-"dp": null,
-"rem": null,
-"aw": null,
+"hrv": 71,
+"rhr": 46,
+"shr": 50,
+"sl": 7.9,
+"dp": 1.4,
+"rem": 1.6,
+"aw": 1.7,
 "ctl": 77.3,
 "atl": 87.3,
 "tsb": -10,
@@ -513,9 +513,9 @@
 "act": 0,
 "in": null,
 "bal": null,
-"w": null,
-"lm": null,
-"rr": null,
+"w": 70.8,
+"lm": 62.8,
+"rr": 14.6,
 "wk": [],
 "open": true
 }
