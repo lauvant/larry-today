@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-22T21:14:32+00:00",
+"generated": "2026-11-23T01:42:14+00:00",
 "rules": {
 "baseline": 1870,
 "proteinTrain": 120,
@@ -10,44 +10,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-11-09",
-"d": "11-09",
-"hrv": 72,
-"rhr": 44,
-"shr": 48,
-"sl": 7.8,
-"dp": 0.3,
-"rem": 1.5,
-"aw": 1.4,
-"ctl": 70.8,
-"atl": 75.1,
-"tsb": -4.3,
-"tss": 74,
-"act": 994,
-"in": 3610,
-"bal": 766,
-"w": 69.9,
-"lm": 62.8,
-"rr": 14.5,
-"wk": [
-{
-"n": "Strength",
-"t": "42m \u00b7 0km \u00b7 HR Avg:86 Max:137 \u00b7 N/A Power \u00b7 160kcal \u00b7 7TSS \u00b7 HR Zones: Z1:42m",
-"min": 42,
-"strength": true,
-"kcal": 160
-},
-{
-"n": "J\u00e1vea Hardlopen",
-"t": "63m \u00b7 13.2km \u00b7 HR Avg:150 Max:161 \u00b7 N/A Power \u00b7 834kcal \u00b7 67TSS \u00b7 HR Zones: Z1:1m, Z2:60m, Z3:2m",
-"min": 63,
-"strength": false,
-"kcal": 834
-}
-],
-"open": false
-},
 {
 "date": "2026-11-10",
 "d": "11-10",
@@ -511,8 +473,8 @@
 "tsb": -24.9,
 "tss": 57,
 "act": 712,
-"in": null,
-"bal": null,
+"in": 2451,
+"bal": -111,
 "w": null,
 "lm": null,
 "rr": 15.4,
@@ -525,6 +487,29 @@
 "kcal": 712
 }
 ],
+"open": false
+},
+{
+"date": "2026-11-23",
+"d": "11-23",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 79.5,
+"atl": 92.2,
+"tsb": -12.7,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
 "open": true
 }
 ],
