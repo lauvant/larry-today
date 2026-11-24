@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-24T05:37:55+00:00",
+"generated": "2026-11-24T16:21:58+00:00",
 "rules": {
 "baseline": 1870,
 "proteinTrain": 120,
@@ -491,21 +491,36 @@
 "dp": 1.4,
 "rem": 1.5,
 "aw": 1.6,
-"ctl": 77.7,
-"atl": 79.9,
-"tsb": -2.2,
-"tss": 0,
-"act": 0,
+"ctl": 78.1,
+"atl": 82.6,
+"tsb": -4.5,
+"tss": 20,
+"act": 133,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14.9,
-"wk": [],
+"wk": [
+{
+"n": "Portim\u00e3o Motorsport - net kcal",
+"t": "41m \u00b7 5.6km \u00b7 HR Avg:110 Max:146 \u00b7 N/A Power \u00b7 133kcal \u00b7 20TSS \u00b7 HR Zones: Z1:33m, Z2:6m, Z3:1m",
+"min": 41,
+"strength": false,
+"kcal": 133
+}
+],
 "open": true
 }
 ],
 "intake": {
+"2026-11-24": {
+"kcal": 1443,
+"carbs": 199.6,
+"protein": 77.2,
+"fat": 32.4,
+"updated": "2026-11-24T13:40:00.000Z"
+},
 "2026-11-23": {
 "kcal": 2184,
 "carbs": 311.3,
@@ -519,13 +534,6 @@
 "protein": 105.7,
 "fat": 91.3,
 "updated": "2026-11-22T19:08:00.000Z"
-},
-"2026-11-21": {
-"kcal": 4538,
-"carbs": 587.5,
-"protein": 151,
-"fat": 150.3,
-"updated": "2026-11-22T07:29:00.000Z"
 }
 }
 }
