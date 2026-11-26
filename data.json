@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-25T19:27:45+00:00",
+"generated": "2026-11-26T02:19:33+00:00",
 "rules": {
 "baseline": 1870,
 "proteinTrain": 120,
@@ -10,44 +10,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-11-12",
-"d": "11-12",
-"hrv": 59,
-"rhr": 47,
-"shr": 52.125,
-"sl": 7.1,
-"dp": 0.5,
-"rem": 2,
-"aw": 1.2,
-"ctl": 77.4,
-"atl": 106.2,
-"tsb": -28.8,
-"tss": 163,
-"act": 2157,
-"in": 3744,
-"bal": -263,
-"w": 70.3,
-"lm": 62.6,
-"rr": 14.8,
-"wk": [
-{
-"n": "Driving Range - net kcal",
-"t": "94m \u00b7 0km \u00b7 HR Avg:106 Max:124 \u00b7 N/A Power \u00b7 384kcal \u00b7 26TSS \u00b7 HR Zones: Z1:94m",
-"min": 94,
-"strength": false,
-"kcal": 384
-},
-{
-"n": "Morning Ride",
-"t": "125m \u00b7 59.2km \u00b7 HR Avg:151 Max:184 \u00b7 243W NP \u00b7 1773kcal \u00b7 137TSS \u00b7 HR Zones: Z1:30m, Z2:53m, Z3:17m, Z4:17m, Z5:9m \u00b7 Power Zones: Z1:30m, Z2:44m, Z3:16m, Z4:22m, Z5:12m, Z6:1m, Z7:26m",
-"min": 125,
-"strength": false,
-"kcal": 1773
-}
-],
-"open": false
-},
 {
 "date": "2026-11-13",
 "d": "11-13",
@@ -496,8 +458,8 @@
 "tsb": -4.3,
 "tss": 49,
 "act": 746,
-"in": null,
-"bal": null,
+"in": 2686,
+"bal": 90,
 "w": null,
 "lm": null,
 "rr": 14.9,
@@ -517,16 +479,46 @@
 "kcal": 522
 }
 ],
+"open": false
+},
+{
+"date": "2026-11-26",
+"d": "11-26",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 76.5,
+"atl": 71.7,
+"tsb": 4.8,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
 "open": true
 }
 ],
 "intake": {
+"2026-11-26": {
+"kcal": 257,
+"carbs": 57.8,
+"protein": 5.2,
+"fat": 0.4,
+"updated": "2026-11-26T02:15:00.000Z"
+},
 "2026-11-25": {
-"kcal": 1628,
-"carbs": 270.1,
-"protein": 74.8,
-"fat": 23.6,
-"updated": "2026-11-25T14:36:00.000Z"
+"kcal": 2686,
+"carbs": 412.7,
+"protein": 130.6,
+"fat": 49.7,
+"updated": "2026-11-25T22:48:00.000Z"
 },
 "2026-11-24": {
 "kcal": 2326,
@@ -534,13 +526,6 @@
 "protein": 135.9,
 "fat": 53.6,
 "updated": "2026-11-25T07:57:00.000Z"
-},
-"2026-11-23": {
-"kcal": 2184,
-"carbs": 311.3,
-"protein": 122.2,
-"fat": 43.4,
-"updated": "2026-11-23T20:19:00.000Z"
 }
 }
 }
