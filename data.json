@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-26T11:09:49+00:00",
+"generated": "2026-11-26T20:07:31+00:00",
 "rules": {
 "baseline": 1870,
 "proteinTrain": 120,
@@ -491,34 +491,42 @@
 "dp": 1,
 "rem": 0.7,
 "aw": 0.3,
-"ctl": 76.5,
-"atl": 71.7,
-"tsb": 4.8,
-"tss": 0,
-"act": 0,
+"ctl": 78.2,
+"atl": 81.3,
+"tsb": -3.1,
+"tss": 72,
+"act": 1173,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14.1,
-"wk": [],
+"wk": [
+{
+"n": "Afternoon Ride",
+"t": "88m \u00b7 42.6km \u00b7 HR Avg:140 Max:164 \u00b7 210W NP \u00b7 1173kcal \u00b7 72TSS \u00b7 HR Zones: Z1:27m, Z2:60m, Z3:1m \u00b7 Power Zones: Z1:20m, Z2:62m, Z3:5m, Z7:3m",
+"min": 88,
+"strength": false,
+"kcal": 1173
+}
+],
 "open": true
 }
 ],
 "intake": {
 "2026-11-26": {
-"kcal": 828,
-"carbs": 135.6,
-"protein": 20.9,
-"fat": 21.3,
-"updated": "2026-11-26T10:00:00.000Z"
+"kcal": 1608,
+"carbs": 258.6,
+"protein": 39.5,
+"fat": 48.5,
+"updated": "2026-11-26T14:58:00.000Z"
 },
 "2026-11-25": {
-"kcal": 2686,
-"carbs": 412.7,
-"protein": 130.6,
-"fat": 49.7,
-"updated": "2026-11-25T22:48:00.000Z"
+"kcal": 2943,
+"carbs": 470.5,
+"protein": 135.8,
+"fat": 50.1,
+"updated": "2026-11-26T14:58:00.000Z"
 },
 "2026-11-24": {
 "kcal": 2326,
