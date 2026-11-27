@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-26T20:07:31+00:00",
+"generated": "2026-11-27T02:48:15+00:00",
 "rules": {
 "baseline": 1870,
 "proteinTrain": 120,
@@ -10,65 +10,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-11-13",
-"d": "11-13",
-"hrv": 58,
-"rhr": 48,
-"shr": 52.875,
-"sl": 7,
-"dp": 1.2,
-"rem": 1.9,
-"aw": 1.4,
-"ctl": 76.5,
-"atl": 97.3,
-"tsb": -20.8,
-"tss": 39,
-"act": 667,
-"in": 1860,
-"bal": -657,
-"w": 71.2,
-"lm": 63.1,
-"rr": 14.8,
-"wk": [
-{
-"n": "Driving Range - net kcal",
-"t": "25m \u00b7 0km \u00b7 HR Avg:93 Max:108 \u00b7 N/A Power \u00b7 83kcal \u00b7 4TSS \u00b7 HR Zones: Z1:25m",
-"min": 25,
-"strength": false,
-"kcal": 83
-},
-{
-"n": "Strength - net kcal",
-"t": "52m \u00b7 0km \u00b7 HR Avg:76 Max:120 \u00b7 N/A Power \u00b7 79kcal \u00b7 5TSS \u00b7 HR Zones: Z1:52m",
-"min": 52,
-"strength": true,
-"kcal": 79
-},
-{
-"n": "Driving Range - net kcal",
-"t": "21m \u00b7 0km \u00b7 HR Avg:94 Max:106 \u00b7 N/A Power \u00b7 75kcal \u00b7 4TSS \u00b7 HR Zones: Z1:21m",
-"min": 21,
-"strength": false,
-"kcal": 75
-},
-{
-"n": "J\u00e1vea Golf - net kcal",
-"t": "69m \u00b7 4.6km \u00b7 HR Avg:94 Max:128 \u00b7 N/A Power \u00b7 341kcal \u00b7 21TSS \u00b7 HR Zones: Z1:112m",
-"min": 69,
-"strength": false,
-"kcal": 341
-},
-{
-"n": "Driving Range - net kcal",
-"t": "22m \u00b7 0km \u00b7 HR Avg:98 Max:113 \u00b7 N/A Power \u00b7 89kcal \u00b7 5TSS \u00b7 HR Zones: Z1:22m",
-"min": 22,
-"strength": false,
-"kcal": 89
-}
-],
-"open": false
-},
 {
 "date": "2026-11-14",
 "d": "11-14",
@@ -458,8 +399,8 @@
 "tsb": -4.3,
 "tss": 49,
 "act": 746,
-"in": 2686,
-"bal": 90,
+"in": 2943,
+"bal": 347,
 "w": null,
 "lm": null,
 "rr": 14.9,
@@ -496,8 +437,8 @@
 "tsb": -3.1,
 "tss": 72,
 "act": 1173,
-"in": null,
-"bal": null,
+"in": 3551,
+"bal": 528,
 "w": null,
 "lm": null,
 "rr": 14.1,
@@ -510,16 +451,39 @@
 "kcal": 1173
 }
 ],
+"open": false
+},
+{
+"date": "2026-11-27",
+"d": "11-27",
+"hrv": 51,
+"rhr": 58,
+"shr": 61.25,
+"sl": 1.2,
+"dp": 0.3,
+"rem": 0.2,
+"aw": 1.1,
+"ctl": 76.4,
+"atl": 70.5,
+"tsb": 5.9,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
 "open": true
 }
 ],
 "intake": {
 "2026-11-26": {
-"kcal": 1608,
-"carbs": 258.6,
-"protein": 39.5,
-"fat": 48.5,
-"updated": "2026-11-26T14:58:00.000Z"
+"kcal": 3551,
+"carbs": 423.8,
+"protein": 145.5,
+"fat": 138.5,
+"updated": "2026-11-26T21:24:00.000Z"
 },
 "2026-11-25": {
 "kcal": 2943,
