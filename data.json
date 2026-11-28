@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-28T10:51:25+00:00",
+"generated": "2026-11-28T18:33:17+00:00",
 "rules": {
 "baseline": 1870,
 "proteinTrain": 120,
@@ -456,34 +456,49 @@
 {
 "date": "2026-11-28",
 "d": "11-28",
-"hrv": 62,
-"rhr": 47,
-"shr": 53.625,
-"sl": 7.9,
-"dp": 1.4,
-"rem": 1.6,
-"aw": 1.4,
-"ctl": 79.3,
-"atl": 85,
-"tsb": -5.7,
-"tss": 0,
-"act": 0,
+"hrv": 45,
+"rhr": 61,
+"shr": 63.375,
+"sl": 1.2,
+"dp": 0.1,
+"rem": 0.2,
+"aw": 0.4,
+"ctl": 84.5,
+"atl": 114.3,
+"tsb": -29.8,
+"tss": 220,
+"act": 2734,
 "in": null,
 "bal": null,
 "w": null,
 "lm": null,
 "rr": 14.6,
-"wk": [],
+"wk": [
+{
+"n": "Strength - net kcal",
+"t": "41m \u00b7 0km \u00b7 HR Avg:82 Max:130 \u00b7 N/A Power \u00b7 91kcal \u00b7 5TSS \u00b7 HR Zones: Z1:41m",
+"min": 41,
+"strength": true,
+"kcal": 91
+},
+{
+"n": "Morning Ride",
+"t": "183m \u00b7 98.6km \u00b7 HR Avg:155 Max:194 \u00b7 252W NP \u00b7 2643kcal \u00b7 215TSS \u00b7 HR Zones: Z1:40m, Z2:66m, Z3:30m, Z4:24m, Z5:20m, Z6:3m \u00b7 Power Zones: Z1:57m, Z2:37m, Z3:23m, Z4:24m, Z5:27m, Z6:14m, Z7:35m",
+"min": 183,
+"strength": false,
+"kcal": 2643
+}
+],
 "open": true
 }
 ],
 "intake": {
 "2026-11-28": {
-"kcal": 829,
-"carbs": 144.2,
-"protein": 23.8,
-"fat": 14.8,
-"updated": "2026-11-28T07:38:00.000Z"
+"kcal": 3098,
+"carbs": 552.7,
+"protein": 85.3,
+"fat": 53.9,
+"updated": "2026-11-28T15:22:00.000Z"
 },
 "2026-11-27": {
 "kcal": 4193,
