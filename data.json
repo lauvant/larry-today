@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-27T20:09:40+00:00",
+"generated": "2026-11-28T02:38:53+00:00",
 "rules": {
 "baseline": 1870,
 "proteinTrain": 120,
@@ -10,37 +10,6 @@
 "sleepNeed": 8.0
 },
 "days": [
-{
-"date": "2026-11-14",
-"d": "11-14",
-"hrv": 61,
-"rhr": 45,
-"shr": 48.875,
-"sl": 5.4,
-"dp": 0.9,
-"rem": 1.4,
-"aw": 1.2,
-"ctl": 75.8,
-"atl": 90.6,
-"tsb": -14.8,
-"tss": 47,
-"act": 603,
-"in": 1629,
-"bal": -824,
-"w": null,
-"lm": null,
-"rr": 13.9,
-"wk": [
-{
-"n": "City of Westminster Hardlopen",
-"t": "45m \u00b7 9.3km \u00b7 HR Avg:149 Max:160 \u00b7 N/A Power \u00b7 603kcal \u00b7 47TSS \u00b7 HR Zones: Z1:4m, Z2:35m, Z3:6m",
-"min": 45,
-"strength": false,
-"kcal": 603
-}
-],
-"open": false
-},
 {
 "date": "2026-11-15",
 "d": "11-15",
@@ -468,8 +437,8 @@
 "tsb": -16.8,
 "tss": 207,
 "act": 2566,
-"in": null,
-"bal": null,
+"in": 4193,
+"bal": -223,
 "w": null,
 "lm": null,
 "rr": 14.9,
@@ -482,6 +451,29 @@
 "kcal": 2566
 }
 ],
+"open": false
+},
+{
+"date": "2026-11-28",
+"d": "11-28",
+"hrv": null,
+"rhr": null,
+"shr": null,
+"sl": null,
+"dp": null,
+"rem": null,
+"aw": null,
+"ctl": 79.3,
+"atl": 85,
+"tsb": -5.7,
+"tss": 0,
+"act": 0,
+"in": null,
+"bal": null,
+"w": null,
+"lm": null,
+"rr": null,
+"wk": [],
 "open": true
 }
 ],
